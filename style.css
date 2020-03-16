@@ -1,0 +1,9 @@
+section{
+  border : 3px solid #777777;
+}
+.section_header{
+  font-weight: bold;
+}
+article{
+  font-size: 2rem;
+}
