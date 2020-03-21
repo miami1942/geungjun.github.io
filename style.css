@@ -1,9 +1,45 @@
-section{
-  border : 3px solid #777777;
+.header{
+  border : 3px solid #aa1111;
+  height: 150px;
+}
+.nav{
+  border : 3px solid #1188ff;
+  height: 40px;
+}
+table{
+  border : 3px solid #000000;
+  height: 300px;
+  width: 100%;
+  height: 100%;
+}
+.td_aside{
+  height: 100%;
+  width: 250px;
+}
+.aside{
+  border : 3px solid #881188;
+  height: 100%;
+}
+.td_section{
+  height: 100%;
+}
+.section_table{
+  height: auto;
+  width: auto;
+}
+.section{
+  border : 3px solid #ffff00;
 }
 .section_header{
-  font-weight: bold;
+  border : 3px solid #115511;
 }
-article{
-  font-size: 2rem;
+.section_article{
+  border : 3px solid #118811;
+}
+.section_footer{
+  border : 3px solid #11dd11;
+}
+.footer{
+  border : 3px solid #1111dd;
+  height: 50px;
 }
