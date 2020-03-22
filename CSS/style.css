@@ -5,7 +5,7 @@
   font-size: 2rem;
 }
 .header_title{
-  font-size: 3rem;
+  font-size: 100%;
 }
 .td_nav{
   border : 3px solid #00ffff;
@@ -44,6 +44,7 @@ table{
 }
 .section_article{
   border : 3px solid #118811;
+  padding: 10%;
 }
 .section_footer{
   border : 3px solid #11dd11;
@@ -52,3 +53,5 @@ table{
   border : 3px solid #1111dd;
   height: 50px;
 }
+/**************************************************/
+img{width: 100%; height: 100%;}
