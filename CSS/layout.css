@@ -1,0 +1,138 @@
+.contaner {
+  height: 100vh;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  display: block;
+  position: absolute;
+  text-align: center;
+  z-index: 10000;
+  color: #fff;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  font-weight: 500;
+}
+
+header #gnb {
+  width: 100%;
+  height: 75px;
+  text-align: center;
+  overflow: hidden;
+}
+
+header #gnb .gnb_list {
+  display: inline-block;
+}
+
+header #gnb .gnb_list > li {
+  float: left;
+}
+
+header #gnb .gnb_list > li .gnb_depth_01 {
+  height: 75px;
+  line-height: 50px;
+  font-size: 30px;
+  display: block;
+  padding: 12px 70px;
+}
+
+header #gnb .gnb_list > li .gnb_depth_02 li a {
+  display: block;
+  padding: 10px 0;
+}
+
+header #gnb_menu {
+  top: 30px;
+  right: 60px;
+  position: absolute;
+  z-index: 3;
+}
+
+header #gnb_menu #gnb_menu_btn {
+  padding: 10px;
+}
+
+header #gnb_menu #gnb_menu_btn span {
+  width: 30px;
+  height: 2px;
+  position: absolute;
+  display: block;
+  background-color: black;
+}
+
+header #gnb_menu span:nth-child(1) {
+  top: 0px;
+}
+
+header #gnb_menu span:nth-child(2) {
+  top: 10px;
+}
+
+header #gnb_menu span:nth-child(3) {
+  top: 20px;
+}
+
+#main_visual {
+  position: relative;
+}
+
+#main_visual #main_visual_img {
+  overflow: hidden;
+}
+
+#main_visual #main_visual_img .main_img {
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+#main_visual #main_visual_img #main_img_1 .main_img {
+  background-image: url("../img/spiderman/newyork_spiderman2.jpg");
+}
+
+#main_visual #main_visual_img #main_img_2 .main_img {
+  background-image: url("../img/yakuza/Kiwami_2_kamurocho.jpg");
+}
+
+#main_visual #main_visual_img #main_img_3 .main_img {
+  background-image: url("../img/assassin_origin/assassin_origin4.jpg");
+}
+
+#main_visual #slogan {
+  position: absolute;
+  width: 100%;
+  top: 40%;
+  z-index: 100;
+}
+
+#main_info {
+  background-color: #ffdd22;
+}
+
+#main_info .card {
+  width: auto;
+  height: auto;
+  max-width: 30vh;
+  max-height: 60vh;
+}
+
+#main_info .card_img li {
+  position: relative;
+  float: left;
+}
+
+#main_info #slogan {
+  position: absolute;
+  float: left;
+}
+
+#main_info2 {
+  background-color: #ffaa22;
+}
+
+footer {
+  height: 25vh;
+}
+/*# sourceMappingURL=layout.css.map */
