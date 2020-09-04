@@ -1,5 +1,3 @@
-new fullpage('#fullpage', {
-});
 
 var list = $("#gnb .gnb_list > li");
 
@@ -10,4 +8,7 @@ list.on("mouseenter", function () {
 list.on("mouseleave", function () {
     $("#header").removeClass("on");
     $("#sub_header").removeClass("on");
+});
+
+new fullpage('#fullpage', {
 });
