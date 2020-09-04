@@ -10,7 +10,7 @@ var btnlanguage = header.find(".utilMenu .language > a");
 var language = header.find(".utilMenu .language > ul");
 //language안에서 a를 찾으면 밑뿐만아니라 그 아랫것도 다 포함된다. 따라서 이렇게쓴다.
 
-list.on("mouseenter", function () {
+list.on("mouseenter", function () { 
     header.addClass("on");
 });
 list.on("mouseleave", function () {
