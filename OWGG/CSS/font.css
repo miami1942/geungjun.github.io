@@ -1,0 +1,18 @@
+#main_visual #slogan {
+  color: #fff;
+  text-align: center;
+}
+
+#main_visual #slogan #slogan_main {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+#main_visual #slogan #slogan_sub {
+  font-size: 30px;
+}
+
+#slogan {
+  color: #fff;
+}
+/*# sourceMappingURL=font.css.map */

@@ -1,14 +1,10 @@
-
-var list = $("#gnb .gnb_list > li");
-
-list.on("mouseenter", function () {
-    $("#header").addClass("on");
-    $("#sub_header").addClass("on");
-});
-list.on("mouseleave", function () {
-    $("#header").removeClass("on");
-    $("#sub_header").removeClass("on");
-});
-
 new fullpage('#fullpage', {
+    navigation: true,
+    slidesNavigation: true,
+    scrollingSpeed: 500,
+    onLeave: function (origin, destination, direction) {
+        console.log("Leaving section" + origin.index);
+    },
+    resetSliders: true,
+    touchSensitivity: 15,
 });

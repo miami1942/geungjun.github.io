@@ -1,16 +1,36 @@
-* {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  scrollbar-width: none;
+#page1 {
+  width: 100%;
+  height: 100%;
+  background-color: cadetblue;
 }
 
-body {
-  font-size: 16px;
+#page2 {
+  width: 100%;
+  height: 100%;
+  background-color: chocolate;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
+#page3 li {
+  left: 600px;
+}
+
+#page3 #page3_1 {
+  background-color: lightgreen;
+}
+
+#page3 #page3_2 {
+  background-color: lightskyblue;
+}
+
+#page3 #page3_3 {
+  background-color: magenta;
+}
+
+#page4 {
+  background-color: darkkhaki;
+}
+
+#page5 {
+  background-color: gray;
 }
 /*# sourceMappingURL=main.css.map */
