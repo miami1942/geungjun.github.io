@@ -141,7 +141,6 @@
 .swiper-button-prev,
 .swiper-button-next {
   position: absolute;
-  top: 50%;
   width: calc(var(--swiper-navigation-size) / 44 * 27);
   height: var(--swiper-navigation-size);
   margin-top: calc(-1 * var(--swiper-navigation-size) / 2);
@@ -248,11 +247,12 @@
   transform: scale(0.33);
 }
 .swiper-pagination-bullet {
-  width: 8px;
-  height: 8px;
+  width: 15px;
+  height: 15px;
+  margin: 10px;
   display: inline-block;
   border-radius: 100%;
-  background: #000;
+  background: rgb(0, 0, 0);
   opacity: 0.2;
 }
 button.swiper-pagination-bullet {
