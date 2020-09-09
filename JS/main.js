@@ -1,12 +1,24 @@
-var header_class = document.getElementsByClassName("header");
+var state = false;
+var list = $("#header #gnb > ul").height()
+
 $(document).ready(function () {
     $("#expand_header").click(function () {
-        $("#header").toggleClass("on");
+        if (state == false) {
+            $("#header").height(list+10)
+            state = !state;
+        }
+        else {
+            $("#header").height(0)
+            state = !state;
+        }
+        //$("#header").toggleClass("on");
     })
 });
 $("#fullpage").on("mouseenter", function () {
     setTimeout(function () {
-        $("#header").removeClass("on")
+        $("#header").height(0)
+        state = false;
+        //$("#header").removeClass("on")
     },0)
 });
 
