@@ -60,8 +60,8 @@ header::after {
   display: block;
   position: absolute;
   width: 100%;
-  top: 56px;
-  content: '';
+  top: 62px;
+  content: "";
   height: 1px;
   background-color: #464646;
 }
