@@ -3,51 +3,75 @@
     padding: 0;
     list-style: none; //리스트 테이블마냥 만들어줌
 }
+
 a {
     text-decoration: none;
     color: inherit;
 }
 
-header {
-    height: 60px;
-    width: 100vw;
-    background-color: rgb(34, 81, 156);
+#expand_header {
     position: fixed;
-    text-align: center;
+    z-index: 1000;
+    right: 0px;
+    margin-right: 5px;
+
+    span {
+        position: relative;
+        display: block;
+        top: 2px;
+        width: 50px;
+        height: 8px;
+        background-color: black;
+        margin: 8px;
+    }
+}
+header {
+    height: 0px;
+    width: 100vw;
+    background-color: rgb(238, 238, 238);
+    position: fixed;
     z-index: 95;
     overflow: hidden;
     transition: 0.25s ease;
 
     #gnb {
-        position: absolute;
-        left: 110px;
-        top: -10px;
-        z-index: 99;//after에 닿아도 on되도록 해줌
+        position: relative;
+        z-index: 70; //after에 닿아도 on되도록 해줌
 
         #gnb_list {
-            float: left;
+            position: relative;
             display: inline-block;
-            margin-left: 80px;
-            font-size: 60px;
+            margin-left: 30px;
+            right: -150px;
+            font-size: 50px;
+            top: 0px;
 
             #gnb_content {
-
-                li {}
+                li {
+                    margin: 15px;
+                    font-size: 30px;
+                    text-align: center;
+                }
             }
         }
     }
 }
-header::after{
+
+header::after {
     display: block;
     position: absolute;
     width: 100%;
-    top: 58px;
+    top: 56px;
     content: '';
     height: 1px;
-    background-color: chocolate;
+    background-color: rgb(70, 70, 70);
 }
-header.on{
-    height: 420px;
+
+header.on {
+    height: 270px;
+
+    #expand_header {
+    }
 }
 
 img {
@@ -74,13 +98,14 @@ img {
         left: 560px;
 
         .swiper-pagination {
-            bottom: 20px;
-            left: 43px;
+            bottom: 12px;
+            left: 40px;
         }
 
         .swiper-button-prev {
             bottom: 20px;
             left: 0px;
+            width: 20px;
         }
 
         .swiper-button-next {
@@ -108,6 +133,7 @@ img {
 
 footer {
     height: 150px;
+
     img {
         height: 100px;
         width: 100px;

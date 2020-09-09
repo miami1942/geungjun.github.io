@@ -17,7 +17,7 @@
   font-style: normal;
 }
 :root {
-  --swiper-theme-color: #007aff;
+  --swiper-theme-color: rgb(0, 174, 255);
 }
 .swiper-container {
   margin-left: auto;
@@ -133,13 +133,13 @@
   scroll-snap-type: y mandatory;
 }
 :root {
-  --swiper-navigation-size: 44px;
+  --swiper-navigation-size: 25px;/*좌우버튼높이*/
   /*
   --swiper-navigation-color: var(--swiper-theme-color);
   */
 }
 .swiper-button-prev,
-.swiper-button-next {
+.swiper-button-next {/*좌우버튼*/
   position: absolute;
   width: calc(var(--swiper-navigation-size) / 44 * 27);
   height: var(--swiper-navigation-size);
@@ -246,7 +246,7 @@
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next-next {
   transform: scale(0.33);
 }
-.swiper-pagination-bullet {
+.swiper-pagination-bullet {/*동그라미*/
   width: 15px;
   height: 15px;
   margin: 10px;

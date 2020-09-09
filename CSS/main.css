@@ -9,43 +9,65 @@ a {
   color: inherit;
 }
 
-header {
-  height: 60px;
-  width: 100vw;
-  background-color: #22519c;
+#expand_header {
   position: fixed;
-  text-align: center;
+  z-index: 1000;
+  right: 0px;
+  margin-right: 5px;
+}
+
+#expand_header span {
+  position: relative;
+  display: block;
+  top: 2px;
+  width: 50px;
+  height: 8px;
+  background-color: black;
+  margin: 8px;
+}
+
+header {
+  height: 0px;
+  width: 100vw;
+  background-color: #eeeeee;
+  position: fixed;
   z-index: 95;
   overflow: hidden;
   transition: 0.25s ease;
 }
 
 header #gnb {
-  position: absolute;
-  left: 110px;
-  top: -10px;
-  z-index: 99;
+  position: relative;
+  z-index: 70;
 }
 
 header #gnb #gnb_list {
-  float: left;
+  position: relative;
   display: inline-block;
-  margin-left: 80px;
-  font-size: 60px;
+  margin-left: 30px;
+  right: -150px;
+  font-size: 50px;
+  top: 0px;
+}
+
+header #gnb #gnb_list #gnb_content li {
+  margin: 15px;
+  font-size: 30px;
+  text-align: center;
 }
 
 header::after {
   display: block;
   position: absolute;
   width: 100%;
-  top: 58px;
+  top: 56px;
   content: '';
   height: 1px;
-  background-color: chocolate;
+  background-color: #464646;
 }
 
 header.on {
-  height: 420px;
+  height: 270px;
 }
 
 img {
@@ -70,13 +92,14 @@ img {
 }
 
 #page3 #swiper_option .swiper-pagination {
-  bottom: 20px;
-  left: 43px;
+  bottom: 12px;
+  left: 40px;
 }
 
 #page3 #swiper_option .swiper-button-prev {
   bottom: 20px;
   left: 0px;
+  width: 20px;
 }
 
 #page3 #swiper_option .swiper-button-next {

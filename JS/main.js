@@ -1,11 +1,14 @@
-var list = $("#header #gnb");
-
-list.on("mouseenter", function () {
-    $("#header").addClass("on");
+var header_class = document.getElementsByClassName("header");
+$(document).ready(function () {
+    $("#expand_header").click(function () {
+        $("#header").toggleClass("on");
+    })
 });
-list.on("mouseleave", function () {
-    $("#header").removeClass("on");
-})
+$("#fullpage").on("mouseenter", function () {
+    setTimeout(function () {
+        $("#header").removeClass("on")
+    },0)
+});
 
 var mySwiper = new Swiper('.swiper-container', {
     loop: true,
@@ -30,6 +33,7 @@ var mySwiper = new Swiper('.swiper-container', {
 
 new fullpage('#fullpage', {
     navigation: true,
+    navigationTooltips: ['STRAT', 'EX1', 'EX2', 'EX3', 'EX4', 'EX5', 'EX6'],
     scrollingSpeed: 500,
     scrollBar: true,
 });
