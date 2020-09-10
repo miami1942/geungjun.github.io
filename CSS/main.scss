@@ -8,69 +8,99 @@ a {
     text-decoration: none;
     color: inherit;
 }
-
-#expand_header {
-    position: fixed;
-    z-index: 1000;
-    right: 0px;
-    margin-right: 5px;
-
-    span {
-        position: relative;
-        display: block;
-        top: 2px;
-        width: 50px;
-        height: 8px;
-        background-color: black;
-        margin: 8px;
-    }
-}
-header {
-    height: 0px;
-    width: 100vw;
-    background-color: rgb(238, 238, 238);
-    position: fixed;
-    z-index: 95;
-    overflow: hidden;
-    transition: 0.25s ease;
-
-    #gnb {
-        position: relative;
-        z-index: 70; //after에 닿아도 on되도록 해줌
-
-        #gnb_list {
+#menu{
+    #expand_header {
+        position: fixed;
+        z-index: 1000;
+        top: 5px;
+        right: 0px;
+        margin-right: 5px;
+        cursor: pointer;
+    
+        span {
             position: relative;
-            display: inline-table;
-            margin-left: 30px;
-            right: -150px;
-            font-size: 50px;
-            top: 0px;
+            display: block;
+            top: 2px;
+            height: 8px;
+            background-color: black;
+            margin: 5px;
+            transition: transform .2s ease
+        }
+        #span1{
+            width: 25px;
+        }
+        #span2{
+            width: 50px;
+        }
+        #span3{
+            bottom: 20px;
+            left: 25px;
+            width: 25px;
+        }
+    }
+    #expand_header.on{
+        #span1{
+            top: 5px;
+            left: 3px;
+            width: 25px;
+            transform: translateX(0px) rotate(45deg);
+        }
+        #span2{
+            transform:rotate(-45deg) translate(0%,0%);
+        }
+        #span3{
+            left: 23px;
+            top: -1px;
+            width: 25px;
+            transform: translateX(0px) rotate(45deg);
+        }
+    }
 
-            #gnb_content {
-                li {
-                    margin: 15px;
-                    font-size: 30px;
-                    text-align: center;
+    header {
+        height: 0px;
+        width: 100vw;
+        background-color: rgb(238, 238, 238);
+        position: fixed;
+        z-index: 95;
+        overflow: hidden;
+        transition: 0.25s ease;
+    
+        #gnb {
+            position: relative;
+            z-index: 70; //after에 닿아도 on되도록 해줌
+    
+            #gnb_list {
+                position: relative;
+                display: inline-table;
+                margin-left: 30px;
+                right: -150px;
+                font-size: 50px;
+                top: 0px;
+    
+                #gnb_content {
+                    li {
+                        margin: 15px;
+                        font-size: 30px;
+                        text-align: center;
+                    }
                 }
             }
         }
-    }
-}
-
-header::after {
-    display: block;
-    position: absolute;
-    width: 100%;
-    top: 82px;
-    content: "";
-    height: 1px;
-    background-color: rgb(70, 70, 70);
-}
-
-header.on {
-    height: 270px;
-
-    #expand_header {
+    } 
+    header::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 60px; //이거 왜안되냐
+        content: "";
+        height: 1px;
+        background-color: rgb(70, 70, 70);
+    } 
+    header.on {
+        height: 270px;
+    
+        #expand_header {
+        }
     }
 }
 

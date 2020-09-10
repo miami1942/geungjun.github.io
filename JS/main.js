@@ -4,11 +4,12 @@ var list = $("#header #gnb > ul").height()
 $(document).ready(function () {
     $("#expand_header").click(function () {
         if (state == false) {
-            $("#header").height(list+10)
+            $("#header").height(list + 10)
+            $("#expand_header").addClass("on")
             state = !state;
-        }
-        else {
-            $("#header").height(0)
+        } else {
+            $("#header").height(0);
+            $("#expand_header").removeClass("on");
             state = !state;
         }
         //$("#header").toggleClass("on");
@@ -16,10 +17,11 @@ $(document).ready(function () {
 });
 $("#fullpage").on("mouseenter", function () {
     setTimeout(function () {
-        $("#header").height(0)
+        $("#header").height(0);
+        $("#expand_header").removeClass("on");
         state = false;
         //$("#header").removeClass("on")
-    },0)
+    }, 0)
 });
 
 var mySwiper = new Swiper('.swiper-container', {
