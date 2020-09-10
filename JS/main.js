@@ -45,7 +45,9 @@ var mySwiper = new Swiper('.swiper-container', {
 
 new fullpage('#fullpage', {
     navigation: true,
-    navigationTooltips: ['STRAT', 'EX1', 'EX2', 'EX3', 'EX4', 'EX5', 'EX6'],
+    navigationTooltips: ['STRAT', '목차', '자기소개-인적',
+        '자기소개-학력', '자기소개-기술력', '프로젝트1', '프로젝트2',
+        '프로젝트3', '프로젝트4','위로','기타'],
     scrollingSpeed: 500,
-    scrollBar: true,
+    scrollBar: false,
 });

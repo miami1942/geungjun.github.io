@@ -5,6 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Open World Game Guide</title>
+  <!--활용 기술-->
+  <!--FullScreen-->
+  <!--swiper-->
+  <!--scss-->
+  <!--구글 map api-->
 
   <link rel="stylesheet" href="/OWGG/CSS/main.css">
   <link rel="stylesheet" href="/OWGG/CSS/layout.css">
@@ -32,7 +37,7 @@
                 <li><a href="/OWGG/HTML/America/ny.html">뉴욕</a></li>
                 <li><a href="/OWGG/HTML/America/sa.html">샌프란시스코</a></li>
                 <li><a href="/OWGG/HTML/America/la.html">로스앤젤레스</a></li>
-                <li><a href="/OWGG/HTML/America/cy.html">시카고</a></li>
+                <li><a href="/OWGG/HTML/America/ch.html">시카고</a></li>
                 <li><a href="/OWGG/HTML/America/all.html">미국 전역</a></li>
               </ul>
             </li>
@@ -132,7 +137,30 @@
               <span></span><span></span>
             </div>
             <li>
-              <img id="img2" src="/OWGG/img/spiderman/구글지도.PNG" alt="">
+              <div id="google_map"></div>
+              <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5wIud_YuCx7roqNIPh_ElzjGhLfHk9IE&callback=initMap">
+              </script>
+              <script>
+                function initMap() {
+                  var NewYork = {
+                    lat: 40.733494,
+                    lng: -73.991808
+                  };
+                  var map = new google.maps.Map(
+                    document.getElementById('google_map'), {
+                      zoom: 12,
+                      center: NewYork
+                    });
+                  /*
+                  new google.maps.Marker({
+                    position: NewYork,
+                    map: map,
+                    label: ""
+                  });
+                  */
+                }
+              </script>
             </li>
           </ul>
         </div>

@@ -26,7 +26,7 @@
                         <li><a href="/OWGG/HTML/America/ny.html">뉴욕</a></li>
                         <li><a href="/OWGG/HTML/America/sa.html">샌프란시스코</a></li>
                         <li><a href="/OWGG/HTML/America/la.html">로스앤젤레스</a></li>
-                        <li><a href="/OWGG/HTML/America/cy.html">시카고</a></li>
+                        <li><a href="/OWGG/HTML/America/ch.html">시카고</a></li>
                         <li><a href="/OWGG/HTML/America/all.html">미국 전역</a></li>
                     </ul>
                 </li>
@@ -68,16 +68,35 @@
     </header>
     <div id="sub_info">
         <div id="slogan">
-            <div id="slogan_main">더 크루</div>
+            <div id="slogan_main">스파이더맨</div>
             <div id="slogan_sub">실제 지도와 비교해 보실 수 있습니다..</div>
         </div>
         <div id="ex_img">
             <ul>
                 <li>
-                    <img id="img1" src="/OWGG/img/spiderman/newyork_spiderman2.jpg" alt="">
+                    <img id="img1" src="/OWGG/img/America/ny/spiderman_ps4_map.jpg" alt="">
                 </li>
+                <div id="equal">
+                    <span></span><span></span>
+                </div>
                 <li>
-                    <img id="img2" src="/OWGG/img/spiderman/구글지도.PNG" alt="">
+                    <div id="google_map"></div>
+                    <script async defer
+                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5wIud_YuCx7roqNIPh_ElzjGhLfHk9IE&callback=initMap">
+                    </script>
+                    <script>
+                        function initMap() {
+                            var NewYork = {
+                                lat: 40.733494,
+                                lng: -73.991808
+                            };
+                            var map = new google.maps.Map(
+                                document.getElementById('google_map'), {
+                                    zoom: 12,
+                                    center: NewYork
+                                });
+                        }
+                    </script>
                 </li>
             </ul>
         </div>

@@ -1,5 +1,5 @@
 var list = $("#gnb .gnb_list > li");
-
+//chrome에서 $(document).ready(function () {});.요건 안먹히네
 list.on("mouseenter", function () {
     $("#header").addClass("on");
     $("#sub_header").addClass("on");
