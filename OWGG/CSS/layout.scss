@@ -146,15 +146,15 @@ body {
             background-position: 50% 50%;
         }
 
-        #main_img_1{
-            background-image: url("../img/spiderman/newyork_spiderman2.jpg");
+        #main_img_1 {
+            background-image: url("../img/America/ny/newyork_spiderman2.jpg");
         }
 
-        #main_img_2{
+        #main_img_2 {
             background-image: url("../img/yakuza/Kiwami_2_kamurocho.jpg");
         }
 
-        #main_img_3{
+        #main_img_3 {
             background-image: url("../img/assassin_origin/assassin_origin4.jpg");
         }
     }
@@ -348,6 +348,7 @@ footer::before {
             margin: 10px;
             top: 110px;
         }
+
         #equal {
             position: absolute;
             left: 410px;
@@ -361,6 +362,7 @@ footer::before {
                 margin: 20px;
             }
         }
+
         #google_map {
             position: relative;
             width: 400px;
