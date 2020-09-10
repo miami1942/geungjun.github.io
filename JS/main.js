@@ -5,7 +5,7 @@ $(document).ready(function () {
     $("#expand_header").click(function () {
         if (state == false) {
             $("#header").height(list + 10)
-            $("#expand_header").addClass("on")
+            $("#menu #expand_header").addClass("on")
             state = !state;
         } else {
             $("#header").height(0);
