@@ -1,0 +1,285 @@
+$header_color: #000000;
+$main_color : rgb(0, 174, 255);
+$font_color : #000000;
+
+#menu {
+    header {
+        background-color: $main_color;
+
+        #gnb_list {
+            color: $header_color;
+            font-family: "고딕";
+            font-weight: 600;
+        }
+    }
+
+    header::after {
+        background-color: $header_color;
+    }
+}
+
+#fullpage {
+    #page1 {
+        margin: 20px;
+
+        #title {
+            position: absolute;
+            color: $main_color;
+            font-weight: 700;
+            font-size: 80px;
+            top: 0px;
+        }
+
+        #main_view {
+            #text {
+                position: absolute;
+                color: $font_color;
+                font-weight: 700;
+                font-size: 30px;
+                top: 250px;
+            }
+
+            #img {
+                position: absolute;
+                width: 500px;
+                height: 500px;
+                right: 30px;
+                bottom: 30px;
+            }
+        }
+    }
+
+    #page2 {
+        margin: 20px;
+
+        #title {
+            position: absolute;
+            color: $main_color;
+            font-weight: 700;
+            font-size: 80px;
+            top: 100px;
+        }
+
+        #main_view {
+            #text {
+                position: absolute;
+                position: absolute;
+                color: $font_color;
+                font-weight: 700;
+                font-size: 30px;
+                top: 200px;
+                left: 50px;
+            }
+
+            #img {
+                position: absolute;
+                width: 500px;
+                height: 500px;
+                right: 200px;
+                bottom: 50px;
+            }
+        }
+    }
+
+    #page3 {
+        margin: 20px;
+
+        #title {
+            position: absolute;
+            color: $main_color;
+            font-weight: 700;
+            font-size: 50px;
+            top: 0px;
+        }
+
+        #main_view {
+            #text1 {
+                position: absolute;
+                color: $font_color;
+                font-weight: 700;
+                font-size: 30px;
+                top: 100px;
+                left: 550px;
+            }
+
+            #img {
+                position: absolute;
+                width: 400px;
+                height: 400px;
+                left: 150px;
+                bottom: 30px;
+            }
+
+            #text2 {
+                position: absolute;
+                color: $font_color;
+                font-weight: 700;
+                font-size: 30px;
+                top: 170px;
+                left: 650px;
+
+                div {
+                    display: inline;
+                }
+            }
+        }
+    }
+
+    #page4 {
+        margin: 20px;
+
+        #title {
+            position: absolute;
+            color: $main_color;
+            font-weight: 700;
+            font-size: 50px;
+            top: 0px;
+        }
+
+        #main_view {
+            #text {
+                position: absolute;
+                color: $font_color;
+                font-weight: 700;
+                font-size: 30px;
+                top: 150px;
+                left: 100px;
+            }
+        }
+    }
+
+    #page5 {
+        margin: 20px;
+
+        #title {
+            position: absolute;
+            color: $main_color;
+            font-weight: 700;
+            font-size: 50px;
+            top: 0px;
+        }
+
+        #main_view {
+            #text {
+                position: absolute;
+                color: $font_color;
+                font-weight: 700;
+                font-size: 30px;
+                top: 150px;
+                left: 100px;
+            }
+        }
+    }
+
+    #page6 {
+        #page6_1 {
+            margin-left: 20px;
+
+            #title {
+                position: absolute;
+                color: $main_color;
+                font-weight: 700;
+                font-size: 50px;
+                top: 0px;
+            }
+
+            #main_view {
+                #img {
+                    position: absolute;
+                    width: 400px;
+                    height: 400px;
+                    left: 30px;
+                    bottom: 50px;
+                }
+                #text {
+                    position: absolute;
+                    position: absolute;
+                    color: $font_color;
+                    font-weight: 700;
+                    font-size: 30px;
+                    top: 100px;
+                    left: 450px;
+                    margin: 50px;
+                    div {
+                        display: inline;
+                    }
+                }
+            }
+        }
+        #page6_2 {
+            margin-left: 20px;
+
+            #title {
+                position: absolute;
+                color: $main_color;
+                font-weight: 700;
+                font-size: 50px;
+                top: 0px;
+            }
+
+            #main_view {
+                #img {
+                    position: absolute;
+                    width: 400px;
+                    height: 400px;
+                    left: 30px;
+                    bottom: 50px;
+                }
+                #text {
+                    position: absolute;
+                    position: absolute;
+                    color: $font_color;
+                    font-weight: 700;
+                    font-size: 30px;
+                    top: 100px;
+                    left: 450px;
+                    margin: 50px;
+                    div {
+                        display: inline;
+                    }
+                }
+            }
+        }
+        #page6_3 {
+            margin-left: 20px;
+
+            #title {
+                position: absolute;
+                color: $main_color;
+                font-weight: 700;
+                font-size: 50px;
+                top: 0px;
+            }
+
+            #main_view {
+                #img {
+                    position: absolute;
+                    width: 400px;
+                    height: 400px;
+                    left: 30px;
+                    bottom: 50px;
+                }
+                #text {
+                    position: absolute;
+                    position: absolute;
+                    color: $font_color;
+                    font-weight: 700;
+                    font-size: 30px;
+                    top: 100px;
+                    left: 450px;
+                    margin: 50px;
+                    div {
+                        display: inline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//풀페이지,오버로드
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    background: $main_color;
+}

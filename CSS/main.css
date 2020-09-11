@@ -1,0 +1,267 @@
+@charset "UTF-8";
+#menu header {
+  background-color: #00aeff;
+}
+
+#menu header #gnb_list {
+  color: #000000;
+  font-family: "고딕";
+  font-weight: 600;
+}
+
+#menu header::after {
+  background-color: #000000;
+}
+
+#fullpage #page1 {
+  margin: 20px;
+}
+
+#fullpage #page1 #title {
+  position: absolute;
+  color: #00aeff;
+  font-weight: 700;
+  font-size: 80px;
+  top: 0px;
+}
+
+#fullpage #page1 #main_view #text {
+  position: absolute;
+  color: #000000;
+  font-weight: 700;
+  font-size: 30px;
+  top: 250px;
+}
+
+#fullpage #page1 #main_view #img {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  right: 30px;
+  bottom: 30px;
+}
+
+#fullpage #page2 {
+  margin: 20px;
+}
+
+#fullpage #page2 #title {
+  position: absolute;
+  color: #00aeff;
+  font-weight: 700;
+  font-size: 80px;
+  top: 100px;
+}
+
+#fullpage #page2 #main_view #text {
+  position: absolute;
+  position: absolute;
+  color: #000000;
+  font-weight: 700;
+  font-size: 30px;
+  top: 200px;
+  left: 50px;
+}
+
+#fullpage #page2 #main_view #img {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  right: 200px;
+  bottom: 50px;
+}
+
+#fullpage #page3 {
+  margin: 20px;
+}
+
+#fullpage #page3 #title {
+  position: absolute;
+  color: #00aeff;
+  font-weight: 700;
+  font-size: 50px;
+  top: 0px;
+}
+
+#fullpage #page3 #main_view #text1 {
+  position: absolute;
+  color: #000000;
+  font-weight: 700;
+  font-size: 30px;
+  top: 100px;
+  left: 550px;
+}
+
+#fullpage #page3 #main_view #img {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  left: 150px;
+  bottom: 30px;
+}
+
+#fullpage #page3 #main_view #text2 {
+  position: absolute;
+  color: #000000;
+  font-weight: 700;
+  font-size: 30px;
+  top: 170px;
+  left: 650px;
+}
+
+#fullpage #page3 #main_view #text2 div {
+  display: inline;
+}
+
+#fullpage #page4 {
+  margin: 20px;
+}
+
+#fullpage #page4 #title {
+  position: absolute;
+  color: #00aeff;
+  font-weight: 700;
+  font-size: 50px;
+  top: 0px;
+}
+
+#fullpage #page4 #main_view #text {
+  position: absolute;
+  color: #000000;
+  font-weight: 700;
+  font-size: 30px;
+  top: 150px;
+  left: 100px;
+}
+
+#fullpage #page5 {
+  margin: 20px;
+}
+
+#fullpage #page5 #title {
+  position: absolute;
+  color: #00aeff;
+  font-weight: 700;
+  font-size: 50px;
+  top: 0px;
+}
+
+#fullpage #page5 #main_view #text {
+  position: absolute;
+  color: #000000;
+  font-weight: 700;
+  font-size: 30px;
+  top: 150px;
+  left: 100px;
+}
+
+#fullpage #page6 #page6_1 {
+  margin-left: 20px;
+}
+
+#fullpage #page6 #page6_1 #title {
+  position: absolute;
+  color: #00aeff;
+  font-weight: 700;
+  font-size: 50px;
+  top: 0px;
+}
+
+#fullpage #page6 #page6_1 #main_view #img {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  left: 30px;
+  bottom: 50px;
+}
+
+#fullpage #page6 #page6_1 #main_view #text {
+  position: absolute;
+  position: absolute;
+  color: #000000;
+  font-weight: 700;
+  font-size: 30px;
+  top: 100px;
+  left: 450px;
+  margin: 50px;
+}
+
+#fullpage #page6 #page6_1 #main_view #text div {
+  display: inline;
+}
+
+#fullpage #page6 #page6_2 {
+  margin-left: 20px;
+}
+
+#fullpage #page6 #page6_2 #title {
+  position: absolute;
+  color: #00aeff;
+  font-weight: 700;
+  font-size: 50px;
+  top: 0px;
+}
+
+#fullpage #page6 #page6_2 #main_view #img {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  left: 30px;
+  bottom: 50px;
+}
+
+#fullpage #page6 #page6_2 #main_view #text {
+  position: absolute;
+  position: absolute;
+  color: #000000;
+  font-weight: 700;
+  font-size: 30px;
+  top: 100px;
+  left: 450px;
+  margin: 50px;
+}
+
+#fullpage #page6 #page6_2 #main_view #text div {
+  display: inline;
+}
+
+#fullpage #page6 #page6_3 {
+  margin-left: 20px;
+}
+
+#fullpage #page6 #page6_3 #title {
+  position: absolute;
+  color: #00aeff;
+  font-weight: 700;
+  font-size: 50px;
+  top: 0px;
+}
+
+#fullpage #page6 #page6_3 #main_view #img {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  left: 30px;
+  bottom: 50px;
+}
+
+#fullpage #page6 #page6_3 #main_view #text {
+  position: absolute;
+  position: absolute;
+  color: #000000;
+  font-weight: 700;
+  font-size: 30px;
+  top: 100px;
+  left: 450px;
+  margin: 50px;
+}
+
+#fullpage #page6 #page6_3 #main_view #text div {
+  display: inline;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background: #00aeff;
+}
+/*# sourceMappingURL=main.css.map */

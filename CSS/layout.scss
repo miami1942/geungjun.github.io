@@ -3,11 +3,11 @@
     padding: 0;
     list-style: none; //리스트 테이블마냥 만들어줌
 }
-
 a {
     text-decoration: none;
     color: inherit;
 }
+
 #menu{
     #expand_header {
         position: fixed;
@@ -59,7 +59,6 @@ a {
     header {
         height: 0px;
         width: 100vw;
-        background-color: rgb(238, 238, 238);
         position: fixed;
         z-index: 95;
         overflow: hidden;
@@ -68,12 +67,12 @@ a {
         #gnb {
             position: relative;
             z-index: 70; //after에 닿아도 on되도록 해줌
+            text-align: center;
     
             #gnb_list {
                 position: relative;
                 display: inline-table;
                 margin-left: 30px;
-                right: -150px;
                 font-size: 50px;
                 top: 0px;
     
@@ -81,7 +80,6 @@ a {
                     li {
                         margin: 15px;
                         font-size: 30px;
-                        text-align: center;
                     }
                 }
             }
@@ -91,10 +89,9 @@ a {
         display: block;
         position: absolute;
         width: 100%;
-        top: 60px; //이거 왜안되냐
+        top: 70px; //이거 왜 크롬에선 안되냐
         content: "";
         height: 1px;
-        background-color: rgb(70, 70, 70);
     } 
     header.on {
         height: 270px;
