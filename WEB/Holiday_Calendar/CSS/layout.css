@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#body {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+
+#body #header {
+  width: 100vw;
+  height: 10vh;
+  background-color: chocolate;
+}
+
+#body #header #header_text {
+  text-align: center;
+  padding: 2px;
+  font-size: 45px;
+}
+
+#body #main {
+  float: left;
+  width: 70vw;
+  height: 80vh;
+  background-color: #742424;
+}
+
+#body #main #left_section {
+  float: left;
+  width: 20vw;
+  height: 80vh;
+  background-color: #818f04;
+  margin-left: 5vw;
+  text-align: center;
+}
+
+#body #main #left_section #today {
+  position: sticky;
+  top: 100px;
+}
+
+#body #main #left_section #today #day {
+  position: relative;
+  top: 100px;
+}
+
+#body #main #right_section {
+  float: left;
+  width: 45vw;
+  height: 80vh;
+  background-color: #04832e;
+  text-align: center;
+}
+
+#body #main #right_section table {
+  width: 45vw;
+  height: 20vh;
+  padding: 20px;
+}
+
+#body #Calculator_section {
+  float: left;
+  width: 25vw;
+  height: 80vh;
+  margin-right: 5vw;
+  background-color: #08676e;
+  text-align: center;
+}
+
+#body #Calculator_section #cal_sec_text {
+  padding: 20px;
+}
+
+#body #Calculator_section #cal_sec_text #cal_sec_header {
+  position: relative;
+  top: 20px;
+}
+
+#body #Calculator_section #cal_sec_text #cal_sec_select {
+  position: relative;
+  top: 70px;
+}
+
+#body #Calculator_section #cal_sec_text #cal_sec_result {
+  position: relative;
+  top: 250px;
+}
+
+#body #footer {
+  position: absolute;
+  width: 95vw;
+  height: 10vh;
+  top: 90vh;
+  background-color: #2f198f;
+  padding-left: 5vw;
+}
+/*# sourceMappingURL=layout.css.map */

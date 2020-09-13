@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holiday_Calendar</title>
+
+    <link rel="stylesheet" href="./CSS/layout.css">
+</head>
+
+<body id="body">
+    <header id="header">
+        <div id="header_text">Holiday Calendar</div>
+    </header>
+    <div id="main">
+        <div id="left_section">
+            <div id="today">
+                <div id="week">일요일(임시)</div>
+                <div id="day"> 13</div>
+            </div>
+            <div id="todo_list"></div>
+        </div>
+        <div id="right_section">
+            <table>
+                <tr id="top">
+                    <td>&#60;</td>
+                    <td colspan="5">yyyy년 mm월</td>
+                    <td>&#62;</td>
+                </tr>
+                <tr id="middle">
+                    <td>일</td>
+                    <td>월</td>
+                    <td>화</td>
+                    <td>수</td>
+                    <td>목</td>
+                    <td>금</td>
+                    <td>토</td>
+                </tr>
+            </table>
+            <script lang="javescript" type="text/javascript">
+            </script>
+        </div>
+    </div>
+    <div id="Calculator_section">
+        <div id="cal_sec_text">
+            <div id="cal_sec_header">
+                원하시는 옵션을 선택해 주세요
+            </div>
+            <div id="cal_sec_select">
+                <select name="년도">
+                    <option>2020년</option>
+                    <option>2021년</option>
+                    <option>2022년</option>
+                    <option>2023년</option>
+                    <option>2024년</option>
+                </select>
+                <p>
+                    모두 : <input type="radio" value="전체" name="select" checked>
+                    쉬는날 : <input type="radio" value="전체" name="select">
+                    토,일 제외 : <input type="radio" value="전체" name="select">
+                </p>
+            </div>
+            <div id="cal_sec_result">
+                <!--다음쉬는날까지 날짜 계산,-->
+                <div>53:일(임시)</div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <div>기타 내용이 들어감</div>
+    </footer>
+</body>
+
+</html>
