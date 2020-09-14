@@ -40,9 +40,9 @@
                 position: sticky;
                 top: 100px;
 
-                #week {}
+                #left_day {}
 
-                #day {
+                #left_date {
                     position: relative;
                     top: 100px;
                 }
@@ -64,6 +64,13 @@
                 #top {}
 
                 #middle {}
+                td{
+                    background-color: lavenderblush;
+                    height: 53px;
+                }
+                #holiday{
+                    background-color: brown;
+                }
             }
         }
     }

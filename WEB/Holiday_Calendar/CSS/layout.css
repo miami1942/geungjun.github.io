@@ -42,7 +42,7 @@
   top: 100px;
 }
 
-#body #main #left_section #today #day {
+#body #main #left_section #today #left_date {
   position: relative;
   top: 100px;
 }
@@ -59,6 +59,15 @@
   width: 45vw;
   height: 20vh;
   padding: 20px;
+}
+
+#body #main #right_section table td {
+  background-color: lavenderblush;
+  height: 53px;
+}
+
+#body #main #right_section table #holiday {
+  background-color: brown;
 }
 
 #body #Calculator_section {
