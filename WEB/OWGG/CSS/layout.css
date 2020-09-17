@@ -303,25 +303,49 @@ footer::before {
 }
 
 #sub_info {
-  background-color: #ffaa22;
   width: 100%;
   height: 100%;
+  background-color: #2b2b2b;
 }
 
-#sub_info #slogan {
-  position: absolute;
-  left: 40%;
+#sub_info #slogan1 {
+  position: relative;
   top: 90px;
   z-index: 100;
+  font-size: 40px;
   text-align: center;
+  color: #ffffff;
+}
+
+#sub_info #movie_box {
+  height: 500px;
+}
+
+#sub_info #movie_box #movie {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  top: 110px;
+  width: 800px;
+  height: 400px;
+  padding: 2px;
+  background-color: white;
+}
+
+#sub_info #slogan2 {
+  position: relative;
+  top: 105px;
+  z-index: 100;
+  font-size: 30px;
+  text-align: center;
+  color: #ffffff;
 }
 
 #sub_info #ex_img {
   width: 80vw;
-  height: 80vh;
-  position: absolute;
+  height: 560px;
+  position: relative;
   left: 13%;
-  top: 6%;
 }
 
 #sub_info #ex_img #img1 {

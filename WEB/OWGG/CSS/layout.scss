@@ -321,24 +321,48 @@ footer::before {
 }
 
 #sub_info {
-    background-color: #ffaa22;
     width: 100%;
     height: 100%;
+    background-color: rgb(43, 43, 43);
 
-    #slogan {
-        position: absolute;
-        left: 40%;
+    #slogan1 {
+        position: relative;
         top: 90px;
         z-index: 100;
+        font-size: 40px;
         text-align: center;
+        color: #ffffff;
+    }
+
+    #movie_box {
+        height: 500px;
+
+        #movie {
+            display: block;
+            position: relative;
+            margin: 0 auto;
+            top: 110px;
+            width: 800px;
+            height: 400px;
+            padding: 2px;
+            background-color: rgb(255, 255, 255);
+        }
+    }
+
+    #slogan2 {
+        position: relative;
+        top: 105px;
+        z-index: 100;
+        font-size: 30px;
+        text-align: center;
+        color: #ffffff;
     }
 
     #ex_img {
         width: 80vw;
-        height: 80vh;
-        position: absolute;
+        height: 560px;
+        position: relative;
         left: 13%;
-        top: 6%;
 
         #img1 {
             position: relative;
