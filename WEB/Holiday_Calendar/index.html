@@ -10,11 +10,14 @@
 
     <script src="./JS/jquery-3.5.1.min.js"></script>
     <script src="./JS/calendar.js"></script>
+    <script src="./JS/right_calculator.js"></script>
+    <script defer src="./JS/add_holiday.js"></script>
 </head>
 
 <body id="body">
     <header id="header">
-        <div id="header_text">Holiday Calendar</div>
+        <div id="go_home"><a href="../../index.html">HOME</a></div>
+        <div id="header_text"><a href="">Holiday Calendar</a></div>
     </header>
     <div id="main">
         <div id="left_section">
@@ -31,15 +34,16 @@
             <table id="calendar_table">
                 <tr id="top">
                     <td>
-                        <label onclick="prev_cal()">
+                        <label id="prev">
                             &#60;
                         </label>
                     </td>
-                    <td colspan="5" id="table_y_m">
-                        yyyy년 mm월
+                    <td colspan="5" id="table_y_m" class="change_api">
+                        <div id="table_y"></div>년 
+                        <div id="table_m"></div>월
                     </td>
                     <td>
-                        <label onclick="next_cal()">
+                        <label id="next">
                             &#62;
                         </label>
                     </td>
@@ -64,23 +68,31 @@
             <div id="cal_sec_header">
                 원하시는 옵션을 선택해 주세요
             </div>
-            <div id="cal_sec_select">
+            <div id="cal_sec_select" class="change_api">
                 <select name="년도">
                     <option>2020년</option>
                     <option>2021년</option>
                     <option>2022년</option>
-                    <option>2023년</option>
-                    <option>2024년</option>
                 </select>
                 <p>
-                    모두 <input type="radio" value="전체" name="select" checked>
-                    쉬는날 <input type="radio" value="전체" name="select">
-                    토,일 제외 <input type="radio" value="전체" name="select">
+                    <div>
+                        초기화 <input type="radio" value="전체" name="select" checked>
+                    </div>
+                    <div>
+                        쉬는날 <input type="radio" value="전체" name="select">
+                    </div>
+                    <div>
+                        일요일 제외 <input type="radio" value="전체" name="select">
+                    </div>
+                    <div>
+                        일요일만 <input type="radio" value="전체" name="select">
+                    </div>
                 </p>
             </div>
             <div id="cal_sec_result">
                 <!--다음쉬는날까지 날짜 계산,-->
-                <div>53:일(임시)</div>
+                <div>365</div>
+                <div>일</div>
             </div>
         </div>
     </div>

@@ -1,31 +1,36 @@
-console.log("Date() -> ", Date())
+//console.log("Date() -> ", Date())
+var sunday = 0
+var holiday_with_sun = 0
+var holiday_except_sun = 0
+
 var today = new Date()
 
 function prev_cal() {
     today = new Date(today.getFullYear(), today.getMonth() - 1, today.getDate())
-    create_cal()
 }
 
 function next_cal() {
     today = new Date(today.getFullYear(), today.getMonth() + 1, today.getDate())
-    create_cal()
 }
 
 function create_cal() {
+    console.log("create cal start")
     //객체변수 = new Date(년, 월, 일, 시, 분, 초, 밀리초) 년 월(0~11)은 필수값
     var month_fir_day = new Date(today.getFullYear(), today.getMonth(), 1)
     var month_last_day = new Date(today.getFullYear(), today.getMonth() + 1, 0)
     //console.log(month_last_day.getDay())
 
     var calendar_table = document.getElementById("calendar_table")
-    var table_y_m = document.getElementById("table_y_m")
+    var table_y = document.getElementById("table_y")
+    var table_m = document.getElementById("table_m")
 
-    while (calendar_table.rows.length > 2) {
-        console.log("while")
+    while (calendar_table.rows.length > 2) {//달력 한번 지워주기(새로만들기위해)
+        //console.log("while")
         calendar_table.deleteRow(calendar_table.rows.length - 1)
     }
 
-    table_y_m.innerHTML = today.getFullYear() + "년 " + (today.getMonth() + 1) + "월"
+    table_y.innerHTML = today.getFullYear()
+    table_m.innerHTML = today.getMonth() + 1
 
     //var row = null
     var cell_count = 0
@@ -33,7 +38,7 @@ function create_cal() {
     //console.log("functioncreate_cal -> row", row)
     var table_cell = null
 
-    console.log("month_fir_day.getDay() -> ", month_fir_day.getDay())
+    //console.log("month_fir_day.getDay() -> ", month_fir_day.getDay())
     for (i = 1; i <= month_fir_day.getDay(); i++) { //시작 위치 찾기
         row.insertCell();
         cell_count = cell_count + 1
@@ -47,9 +52,10 @@ function create_cal() {
         var table_cell = row.insertCell()
 
         if (cell_count == 1) {
-            table_cell.parentNode.innerHTML = "<td id='holiday'>" + "<div id='text' onclick='show_left(event)'>" + i
+            table_cell.parentNode.innerHTML = "<td id='holiday'>" + "<div id='cal_text' onclick='show_left(event)'>" + i
+            sunday++
         } else {
-            table_cell.innerHTML = "<div id='text' onclick='show_left(event)'>" + i
+            table_cell.innerHTML = "<div id='cal_text' onclick='show_left(event)'>" + i
         }
         cell_count = cell_count + 1
     }
@@ -60,7 +66,7 @@ function reset_left() {
     var left_date = document.getElementById("left_date")
 
     var day = ""
-    console.log("today.getDay()", today.getDay())
+    //console.log("today.getDay()", today.getDay())
     switch (today.getDay()) {
         case 0:
             day = "일"
@@ -89,7 +95,7 @@ function reset_left() {
 }
 
 function show_left(event) {
-    console.log("show_left event -> ", event.target.innerText)
+    //console.log("show_left event -> ", event.target.innerText)
     var left_day = document.getElementById("left_day")
     var left_date = document.getElementById("left_date")
 
@@ -123,3 +129,4 @@ function show_left(event) {
     left_date.innerHTML = event.target.innerText
 
 }
+
