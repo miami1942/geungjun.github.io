@@ -10,50 +10,42 @@ a {
 
 #body {
     width: 100vw;
-    height: 100vh;
-    background-color: black;
 
     #header {
         width: 100vw;
-        height: 10vh;
-        background-color: chocolate;
+        height: 60px;
 
         #go_home {
             position: absolute;
-            color: #ffffff;
-            font-size: 30px;
             left: 20px;
             top: 10px;
         }
 
         #header_text {
             text-align: center;
-            padding: 2px;
-            font-size: 45px;
-            //font-weight: 600;
+            padding: 4px;
         }
     }
 
     #main {
         float: left;
-        width: 70vw;
-        height: 80vh;
-        background-color: rgb(116, 36, 36);
+        width: 73vw;
 
 
         #left_section {
             float: left;
             width: 20vw;
-            height: 80vh;
-            background-color: rgb(129, 143, 4);
             margin-left: 5vw;
             text-align: center;
 
             #today {
-                position: sticky;
-                top: 100px;
+                position: relative;
+                top: 20px;
 
-                #left_day {}
+                #left_day {
+                    position: relative;
+                    top: 50px;
+                }
 
                 #left_date {
                     position: relative;
@@ -64,27 +56,42 @@ a {
 
         #right_section {
             float: left;
-            width: 45vw;
-            height: 80vh;
-            background-color: rgb(4, 131, 46);
+            width: 48vw;
             text-align: center;
 
             table {
-                width: 45vw;
-                height: 20vh;
-                padding: 20px;
-
-                #top {}
-
-                #middle {}
+                padding: 1px;
+                margin: 19px;
+                width: 575px;
 
                 td {
-                    background-color: lavenderblush;
-                    height: 53px;
+                    height: 51px;
+                    width: 74px;
                 }
 
-                #holiday {
-                    background-color: brown;
+                #top {
+                    div {
+                        display: inline;
+                    }
+                }
+
+                #millde {}
+
+                #created_row {
+                    td {
+                        #cal_text {
+                            position: relative;
+                            width: 0px;
+                            height: 0px;
+                            top: -25px;
+                            left: 5px;
+                        }
+
+                        #holiday_name {
+                            position: relative;
+                            height: 0px;
+                        }
+                    }
                 }
             }
         }
@@ -92,11 +99,8 @@ a {
 
     #Calculator_section {
         float: left;
-        width: 25vw;
-        height: 80vh;
+        width: 22vw;
         margin-right: 5vw;
-        background-color: rgb(8, 103, 110);
-        text-align: center;
 
         #cal_sec_text {
             padding: 20px;
@@ -104,26 +108,78 @@ a {
             #cal_sec_header {
                 position: relative;
                 top: 20px;
+                text-align: center;
             }
 
             #cal_sec_select {
                 position: relative;
-                top: 70px;
+                top: 90px;
+
+                #now_year {
+                    margin-bottom: 10px;
+
+                    div {
+                        display: inline;
+                    }
+                }
+
+                p {
+                    text-align: left;
+                }
+
+                /*
+                //라디오버튼 숨기기(미정)
+                input {
+                    position: absolute;
+                    width: 1px;
+                    height: 1px;
+                    padding: 0;
+                    margin: -1px;
+                    overflow: hidden;
+                    clip: rect(0, 0, 0, 0);
+                    border: 0
+                }
+                */
             }
 
             #cal_sec_result {
                 position: relative;
-                top: 250px;
+                top: 150px;
+                text-align: center;
+
+                div {
+                    display: inline;
+                }
             }
         }
     }
 
+
+    footer::before {
+        display: block;
+        content: "";
+        height: 1px;
+        background-color: black;
+        margin-bottom: 6px;
+    }
+
     #footer {
         position: absolute;
-        width: 95vw;
-        height: 10vh;
-        top: 90vh;
-        background-color: rgb(47, 25, 143);
-        padding-left: 5vw;
+        width: 100vw;
+        height: 50px;
+        top: 88vh;
+        font-size: 14px;
+        padding-top: 1vh;
+
+        #footer_content {
+            position: absolute;
+            left: 10px;
+
+            #section01 {}
+
+            #section02 {}
+
+            #section03 {}
+        }
     }
 }

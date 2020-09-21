@@ -1,0 +1,79 @@
+td {
+  border: 2px solid #5e5e5e;
+}
+
+#body #header #go_home {
+  font-weight: 600;
+  font-size: 30px;
+  color: #00aeff;
+}
+
+#body #header #header_text {
+  font-size: 45px;
+  font-weight: 600;
+}
+
+#body #main #left_section #today {
+  height: 385px;
+  border: 5px solid #5e5e5e;
+}
+
+#body #main #left_section #today #left_day {
+  font-size: 40px;
+}
+
+#body #main #left_section #today #left_date {
+  font-size: 100px;
+}
+
+#body #main #right_section table td {
+  background-color: white;
+}
+
+#body #main #right_section table #holiday {
+  background-color: #ff6c6c;
+}
+
+#body #main #right_section table #top #prev {
+  position: relative;
+  font-size: 38px;
+  top: -4px;
+  padding: 0px 20px;
+}
+
+#body #main #right_section table #top #next {
+  position: relative;
+  font-size: 38px;
+  top: -4px;
+  padding: 0px 20px;
+}
+
+#body #main #right_section table #top #table_y_m {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+#body #main #right_section table #middle {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+#body #main #right_section table #middle td {
+  background-color: #8fdaff;
+}
+
+#body #main #right_section table #middle #sunday {
+  color: #ff6c6c;
+}
+
+#body #Calculator_section #cal_sec_text {
+  position: relative;
+  top: 18px;
+  height: 347px;
+  border: 5px solid #5e5e5e;
+}
+
+#body #Calculator_section #cal_sec_text #caution {
+  font-size: 11px;
+}
+/*# sourceMappingURL=main.css.map */

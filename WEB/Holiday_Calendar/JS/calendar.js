@@ -1,9 +1,23 @@
 //console.log("Date() -> ", Date())
-var sunday = 0
-var holiday_with_sun = 0
-var holiday_except_sun = 0
-
+var holiday_map = new Map()
 var today = new Date()
+var radio_only_sunday = 0;
+
+function add_zero(num) {
+    if (0 < num && num < 10) {
+        num = "0" + num
+    } else {
+        num = num +""
+    }
+    return num
+}
+
+function remove_zero(num) {
+    if (num < 10) {
+        num = num.substring(1, 2)
+    }
+    return num
+}
 
 function prev_cal() {
     today = new Date(today.getFullYear(), today.getMonth() - 1, today.getDate())
@@ -18,6 +32,7 @@ function create_cal() {
     //객체변수 = new Date(년, 월, 일, 시, 분, 초, 밀리초) 년 월(0~11)은 필수값
     var month_fir_day = new Date(today.getFullYear(), today.getMonth(), 1)
     var month_last_day = new Date(today.getFullYear(), today.getMonth() + 1, 0)
+    var temp_today = today.getFullYear() + add_zero(today.getMonth()+1)
     //console.log(month_last_day.getDay())
 
     var calendar_table = document.getElementById("calendar_table")
@@ -35,6 +50,7 @@ function create_cal() {
     //var row = null
     var cell_count = 0
     var row = calendar_table.insertRow()
+    row.id = "created_row"
     //console.log("functioncreate_cal -> row", row)
     var table_cell = null
 
@@ -48,12 +64,14 @@ function create_cal() {
         if (cell_count > 7) { //줄바꿈
             cell_count = 1
             row = calendar_table.insertRow()
+            row.id = "created_row"
         }
         var table_cell = row.insertCell()
 
         if (cell_count == 1) {
             table_cell.parentNode.innerHTML = "<td id='holiday'>" + "<div id='cal_text' onclick='show_left(event)'>" + i
-            sunday++
+            holiday_map.set(temp_today + add_zero(i), "sunday")
+            radio_only_sunday++
         } else {
             table_cell.innerHTML = "<div id='cal_text' onclick='show_left(event)'>" + i
         }

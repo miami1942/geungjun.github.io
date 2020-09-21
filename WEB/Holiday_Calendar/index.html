@@ -7,10 +7,10 @@
     <title>Holiday_Calendar</title>
 
     <link rel="stylesheet" href="./CSS/layout.css">
+    <link rel="stylesheet" href="./CSS/main.css">
 
     <script src="./JS/jquery-3.5.1.min.js"></script>
     <script src="./JS/calendar.js"></script>
-    <script src="./JS/right_calculator.js"></script>
     <script defer src="./JS/add_holiday.js"></script>
 </head>
 
@@ -22,8 +22,8 @@
     <div id="main">
         <div id="left_section">
             <div id="today">
-                <div id="left_day">일요일(임시)</div>
-                <div id="left_date"> 13</div>
+                <div id="left_day"></div>
+                <div id="left_date"> </div>
                 <script lang="javescript" type="text/javascript">
                     reset_left()
                 </script>
@@ -39,7 +39,7 @@
                         </label>
                     </td>
                     <td colspan="5" id="table_y_m" class="change_api">
-                        <div id="table_y"></div>년 
+                        <div id="table_y"></div>년
                         <div id="table_m"></div>월
                     </td>
                     <td>
@@ -49,7 +49,7 @@
                     </td>
                 </tr>
                 <tr id="middle">
-                    <td>일</td>
+                    <td id="sunday">일</td>
                     <td>월</td>
                     <td>화</td>
                     <td>수</td>
@@ -67,37 +67,66 @@
         <div id="cal_sec_text">
             <div id="cal_sec_header">
                 원하시는 옵션을 선택해 주세요
+                <div id="caution">*2023년 이후로는 API데이터가 없습니다</div>
             </div>
-            <div id="cal_sec_select" class="change_api">
-                <select name="년도">
-                    <option>2020년</option>
-                    <option>2021년</option>
-                    <option>2022년</option>
-                </select>
+            <div id="cal_sec_select">
+                <div id="now_year">
+                    <div>현재 년도</div>
+                    <div id="cal_sec_y">0000</div>년
+                </div>
                 <p>
-                    <div>
-                        초기화 <input type="radio" value="전체" name="select" checked>
+                    <div id="radio_reset" class="change_api">
+                        <input id="radio_01" type="radio" value="radio_reset" name="select" checked>
+                        <label for="radio_01">초기화</label>
                     </div>
-                    <div>
-                        쉬는날 <input type="radio" value="전체" name="select">
+                    <div id="radio_all_holiday" class="change_api">
+                        <input id="radio_02" type="radio" value="radio_all_holiday" name="select">
+                        <label for="radio_02">쉬는날</label>
                     </div>
-                    <div>
-                        일요일 제외 <input type="radio" value="전체" name="select">
+                    <div id="radio_only_holiday" class="change_api">
+                        <input id="radio_03" type="radio" value="radio_only_holiday" name="select">
+                        <label for="radio_03">공휴일</label>
                     </div>
-                    <div>
-                        일요일만 <input type="radio" value="전체" name="select">
+                    <div id="radio_except_sunday" class="change_api">
+                        <input id="radio_04" type="radio" value="radio_except_sunday" name="select">
+                        <label for="radio_04">공휴일(일요일 제외)</label>
+                    </div>
+                    <div id="radio_only_sunday" class="change_api">
+                        <input id="radio_05" type="radio" value="radio_only_sunday" name="select">
+                        <label for="radio_05">일요일만</label>
                     </div>
                 </p>
             </div>
             <div id="cal_sec_result">
                 <!--다음쉬는날까지 날짜 계산,-->
-                <div>365</div>
-                <div>일</div>
+                <div id="radio_result">365</div>일
             </div>
         </div>
     </div>
     <footer id="footer">
-        <div>기타 내용이 들어감</div>
+        <div id="footer_content">
+            <div id="section01">
+                <span>데이터 출처 :</span>
+                <span>
+                    공공 데이터 포탈 오픈 API 특일정보
+                    <a href="https://www.data.go.kr/data/15012690/openapi.do">(
+                        https://www.data.go.kr/data/15012690/openapi.do )</a>
+                </span>
+            </div>
+            <div id="section02">
+                <span>만든이 :</span>
+                <span>
+                    장준혁
+                </span>
+            </div>
+            <div id="section03">
+                <span>블로그 :</span>
+                <span>
+                    <a href="https://blog.naver.com/wkdgmd7386">https://blog.naver.com/wkdgmd7386</a>
+                </span>
+            </div>
+        </div>
+
     </footer>
 </body>
 

@@ -1,0 +1,121 @@
+$main_color : rgb(94, 94, 94);
+$holiday_color : rgb(255, 108, 108);
+$side_color : rgb(143, 218, 255);
+
+td {
+    border: 2px solid $main_color;
+}
+
+#body {
+    //background-color: $main_color;
+
+    #header {
+        //background-color: $main_color;
+
+        #go_home {
+            font-weight: 600;
+            font-size: 30px;
+            color: rgb(0, 174, 255);
+        }
+
+        #header_text {
+            font-size: 45px;
+            font-weight: 600;
+        }
+    }
+
+    #main {
+        //background-color: $main_color;
+
+
+        #left_section {
+            //background-color: $side_color;
+
+            #today {
+                //background-color: $side_color;
+                height: 385px;
+                border: 5px solid $main_color;
+
+                #left_day {
+                    font-size: 40px;
+                }
+
+                #left_date {
+                    font-size: 100px;
+                }
+            }
+        }
+
+        #right_section {
+
+            //background-color:$main_color;
+            table {
+                //background-color: $main_color;
+
+                td {
+                    background-color: rgb(255, 255, 255);
+                }
+
+                #holiday {
+                    background-color: $holiday_color 
+                }
+
+                #top {
+                    
+                    #prev {
+                        position: relative;
+                        font-size: 38px;
+                        top: -4px;
+                        padding: 0px 20px;
+                    }
+
+                    #next {
+                        position: relative;
+                        font-size: 38px;
+                        top: -4px;
+                        padding: 0px 20px;
+                    }
+
+                    #table_y_m {
+                        font-size: 25px;
+                        font-weight: 600;
+                    }
+                }
+
+                #middle {
+                    font-size: 25px;
+                    font-weight: 500;
+                    td{
+                        background-color: $side_color
+                    }
+                    #sunday{
+                        color: $holiday_color 
+                    }
+                }
+            }
+        }
+    }
+
+    #Calculator_section {
+        #cal_sec_text {
+            position: relative;
+            top: 18px;
+            height: 347px;
+            border: 5px solid $main_color;
+
+            #caution {
+                font-size: 11px;
+            }
+        }
+    }
+
+    #footer {
+
+        //background-color: $main_color;
+        #section01 {}
+
+        #section02 {}
+
+        #section03 {}
+    }
+}

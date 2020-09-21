@@ -1,19 +1,11 @@
-function add_zero(num) {
-    if (0 < num && num < 10) {
-        num = "0" + num
-    }
-    return num
-}
+var calulator_result_map = new Map()
+calulator_result_map.set("radio_reset", 365)
 
-function remove_zero(num) {
-    if (num < 10) {
-        num = num.substring(1, 2)
-    }
-    return num
-}
+var my_year = $('#table_y').text()
+var my_month = add_zero($('#table_m').text())
 
-function data_api(my_year, my_month) {
-    console.log("data_api is start")
+function data_api(my_year) {
+    //console.log("data_api is start")
     //debugger;
     var xhr = new XMLHttpRequest();
     var url = 'http://apis.data.go.kr/B090041/openapi/service/SpcdeInfoService/getRestDeInfo'; /*URL*/
@@ -22,21 +14,20 @@ function data_api(my_year, my_month) {
     queryParams += '&' + encodeURIComponent('pageNo') + '=' + encodeURIComponent('1'); /**/
     queryParams += '&' + encodeURIComponent('numOfRows') + '=' + encodeURIComponent('30'); /**/
     queryParams += '&' + encodeURIComponent('solYear') + '=' + encodeURIComponent(my_year); /**/
-    queryParams += '&' + encodeURIComponent('solMonth') + '=' + encodeURIComponent(my_month); /**/
+    //queryParams += '&' + encodeURIComponent('solMonth') + '=' + encodeURIComponent(my_month); /**/
     xhr.open('GET', url + queryParams);
     xhr.onreadystatechange = function () {
-        console.log("this.readyState", this.readyState)
+        //console.log("this.readyState", this.readyState)
         if (this.readyState == 4) { //이게 4가 뒤늦게되네?? 요청하고 받고 하는거라 바로는 안되네
             //alert('Status: ' + this.status + '   nHeaders: ' + JSON.stringify(this.getAllResponseHeaders()) + '   nBody: ' + this.responseText);
             parsing_function(this)
-            console.log("parsing_function")
         }
     };
     xhr.send();
 }
 
 function parsing_function(xml) {
-    //debugger;
+    holiday_map.clear()
     var xmlDoc = xml.responseXML; //파싱
 
     var dateName = xmlDoc.getElementsByTagName("dateName"); //공휴일이 들어있는 배열값들
@@ -47,6 +38,9 @@ function parsing_function(xml) {
         //console.log(dateName[i].firstChild.data)
         var day = remove_zero(locdate[i].firstChild.data.substring(6, 8))
         var month = remove_zero(locdate[i].firstChild.data.substring(4, 6))
+        //맵에 넣기
+        holiday_map.set(locdate[i].firstChild.data, dateName[i].firstChild.data)
+
         //console.log("month", month)
         //console.log("day", day)
         var tbody = $('#cal_text').parent().parent().parent().children()
@@ -55,64 +49,112 @@ function parsing_function(xml) {
         for (j = start_num; j < tbody.children().length; j++) {
             if (tbody.children().eq(j).text() == day && month == $('#cal_text').parent().parent().parent().find("#table_m").text()) {
                 tbody.children().eq(j).attr('id', 'holiday')
-                tbody.children().eq(j).prepend("<div id='holiday_name'>" + dateName[i].firstChild.data + "</div>")
+                tbody.children().eq(j).append("<div id='holiday_name'>" + dateName[i].firstChild.data + "</div>")
                 //console.log("tbody.children().eq(j)", tbody.children().eq(j).children())
                 start_num = j
                 break;
             }
         }
     }
-}
+    //console.log(holiday_map)
+    var radio_val = $(":radio[name='select']:checked").val()
+    switch (radio_val) {
+        case "radio_reset":
+            console.log("radio_reset")
+            $("#radio_result").text(calulator_result_map.get("radio_reset"))
+            break;
+        case "radio_all_holiday":
+            console.log("radio_all_holiday")
+            one_year_running()
+            $("#radio_result").text(calulator_result_map.get("radio_all_holiday"))
+            break;
+        case "radio_only_holiday":
+            console.log("radio_only_holiday")
+            one_year_running()
+            $("#radio_result").text(calulator_result_map.get("radio_only_holiday"))
+            break;
+        case "radio_except_sunday":
+            console.log("radio_except_sunday")
+            one_year_running()
+            $("#radio_result").text(calulator_result_map.get("radio_except_sunday"))
+            break;
+        case "radio_only_sunday":
+            console.log("radio_only_sunday")
+            one_year_running()
+            $("#radio_result").text(calulator_result_map.get("radio_only_sunday"))
+            break;
+    }
 
-var my_year = $('#table_y').text()
-var my_month = add_zero($('#table_m').text())
+    function one_year_running() {
+        radio_only_sunday=0//일요일 다시 새야되서 초기화
+        var my_year = $('#table_y').text()
+        var my_month = $('#table_m').text()
+        var radio_only_holiday = locdate.length
+        for (x = 1; x <= 12; x++) {
+            today = new Date(my_year, x - 1)
+            create_cal()
+        }
+        for (i = 0; i < locdate.length; i++) {
+            holiday_map.set(locdate[i].firstChild.data, dateName[i].firstChild.data)
+        }
+        console.log(holiday_map)
+        today = new Date(my_year, my_month - 1)
+        create_cal()
+        
+
+        for (i = 0; i < locdate.length; i++) {
+            //console.log(dateName[i].firstChild.data)
+            var day = remove_zero(locdate[i].firstChild.data.substring(6, 8))
+            var month = remove_zero(locdate[i].firstChild.data.substring(4, 6))
+            var tbody = $('#cal_text').parent().parent().parent().children()
+            var start_num = 10
+
+            for (j = start_num; j < tbody.children().length; j++) {
+                if (tbody.children().eq(j).text() == day && month == $('#cal_text').parent().parent().parent().find("#table_m").text()) {
+                    tbody.children().eq(j).attr('id', 'holiday')
+                    tbody.children().eq(j).prepend("<div id='holiday_name'>" + dateName[i].firstChild.data + "</div>")
+                    //console.log("tbody.children().eq(j)", tbody.children().eq(j).children())
+                    start_num = j
+                    break;
+                }
+            }
+        }
+        var radio_except_sunday = holiday_map.size - radio_only_sunday
+        //=radio_only_holiday-(radio_only_holiday-(holiday_map.size - radio_only_sunday))
+        calulator_result_map.set("radio_all_holiday", holiday_map.size)
+        calulator_result_map.set("radio_only_holiday", radio_only_holiday)
+        calulator_result_map.set("radio_except_sunday", radio_except_sunday)
+        calulator_result_map.set("radio_only_sunday", radio_only_sunday)
+    }
+}
 
 $("#prev").on('click', function () {
     prev_cal()
     create_cal()
-    var my_year = $('#table_y').text()
+    $("input:radio[name='select']").filter("[value=radio_reset]").prop("checked", true)
+    my_year = $('#table_y').text()
     //console.log("my_year", my_year)
-    var my_month = add_zero($('#table_m').text())
+    my_month = add_zero($('#table_m').text())
     //console.log("my_month", my_month)
     data_api(my_year, my_month)
     //console.log(today)
+    $("#cal_sec_y").text(my_year)
 })
 $("#next").on('click', function () {
     next_cal()
     create_cal()
+    $("input:radio[name='select']").filter("[value=radio_reset]").prop("checked", true)
     //console.log("tbody.children().eq(j).text()", $('#cal_text').parent().parent().parent().find("#table_m").text())
-    var my_year = $('#table_y').text()
+    my_year = $('#table_y').text()
     //console.log("my_year", my_year)
-    var my_month = add_zero($('#table_m').text())
+    my_month = add_zero($('#table_m').text())
     //console.log("my_month", my_month)
     data_api(my_year, my_month)
     //console.log(today)
+    $("#cal_sec_y").text(my_year)
 })
 $(".change_api").on('mouseup', function () {
-    var my_year = $('#table_y').text()
-    var my_month = add_zero($('#table_m').text())
-    //console.log("my_month", my_month)
-    sunday = 0
-    holiday_with_sun = 0
-    holiday_except_sun = 0
-    for (x = 1; x <= 12; x++) { //요청을 받아야하는데 금방안되서 이건 안됨
-        //console.log($('#holiday').parent().parent().children().children())
-        today = new Date(my_year, x - 1)
-        create_cal()
-        //debugger;
-
-        data_api(my_year, add_zero(x))
-        console.log($('#holiday').parent().parent().children().find("#holiday").length)
-        if ($('#cal_text').parent().parent().parent().find("#holiday")) {
-            holiday_with_sun++
-        }
-        next_cal()
-    }
-
-    today = new Date(my_year, my_month - 1)
-    create_cal()
     data_api(my_year, my_month)
-    //console.log(today)
 })
-//console.log(today)
 data_api(my_year, my_month)
+$("#cal_sec_y").text(my_year)

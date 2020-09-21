@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -10,49 +11,44 @@ a {
 
 #body {
   width: 100vw;
-  height: 100vh;
-  background-color: black;
 }
 
 #body #header {
   width: 100vw;
-  height: 10vh;
-  background-color: chocolate;
+  height: 60px;
 }
 
 #body #header #go_home {
   position: absolute;
-  color: #ffffff;
-  font-size: 30px;
   left: 20px;
   top: 10px;
 }
 
 #body #header #header_text {
   text-align: center;
-  padding: 2px;
-  font-size: 45px;
+  padding: 4px;
 }
 
 #body #main {
   float: left;
-  width: 70vw;
-  height: 80vh;
-  background-color: #742424;
+  width: 73vw;
 }
 
 #body #main #left_section {
   float: left;
   width: 20vw;
-  height: 80vh;
-  background-color: #818f04;
   margin-left: 5vw;
   text-align: center;
 }
 
 #body #main #left_section #today {
-  position: sticky;
-  top: 100px;
+  position: relative;
+  top: 20px;
+}
+
+#body #main #left_section #today #left_day {
+  position: relative;
+  top: 50px;
 }
 
 #body #main #left_section #today #left_date {
@@ -62,34 +58,42 @@ a {
 
 #body #main #right_section {
   float: left;
-  width: 45vw;
-  height: 80vh;
-  background-color: #04832e;
+  width: 48vw;
   text-align: center;
 }
 
 #body #main #right_section table {
-  width: 45vw;
-  height: 20vh;
-  padding: 20px;
+  padding: 1px;
+  margin: 19px;
+  width: 575px;
 }
 
 #body #main #right_section table td {
-  background-color: lavenderblush;
-  height: 53px;
+  height: 51px;
+  width: 74px;
 }
 
-#body #main #right_section table #holiday {
-  background-color: brown;
+#body #main #right_section table #top div {
+  display: inline;
+}
+
+#body #main #right_section table #created_row td #cal_text {
+  position: relative;
+  width: 0px;
+  height: 0px;
+  top: -25px;
+  left: 5px;
+}
+
+#body #main #right_section table #created_row td #holiday_name {
+  position: relative;
+  height: 0px;
 }
 
 #body #Calculator_section {
   float: left;
-  width: 25vw;
-  height: 80vh;
+  width: 22vw;
   margin-right: 5vw;
-  background-color: #08676e;
-  text-align: center;
 }
 
 #body #Calculator_section #cal_sec_text {
@@ -99,24 +103,68 @@ a {
 #body #Calculator_section #cal_sec_text #cal_sec_header {
   position: relative;
   top: 20px;
+  text-align: center;
 }
 
 #body #Calculator_section #cal_sec_text #cal_sec_select {
   position: relative;
-  top: 70px;
+  top: 90px;
+  /*
+                //라디오버튼 숨기기(미정)
+                input {
+                    position: absolute;
+                    width: 1px;
+                    height: 1px;
+                    padding: 0;
+                    margin: -1px;
+                    overflow: hidden;
+                    clip: rect(0, 0, 0, 0);
+                    border: 0
+                }
+                */
+}
+
+#body #Calculator_section #cal_sec_text #cal_sec_select #now_year {
+  margin-bottom: 10px;
+}
+
+#body #Calculator_section #cal_sec_text #cal_sec_select #now_year div {
+  display: inline;
+}
+
+#body #Calculator_section #cal_sec_text #cal_sec_select p {
+  text-align: left;
 }
 
 #body #Calculator_section #cal_sec_text #cal_sec_result {
   position: relative;
-  top: 250px;
+  top: 150px;
+  text-align: center;
+}
+
+#body #Calculator_section #cal_sec_text #cal_sec_result div {
+  display: inline;
+}
+
+#body footer::before {
+  display: block;
+  content: "";
+  height: 1px;
+  background-color: black;
+  margin-bottom: 6px;
 }
 
 #body #footer {
   position: absolute;
-  width: 95vw;
-  height: 10vh;
-  top: 90vh;
-  background-color: #2f198f;
-  padding-left: 5vw;
+  width: 100vw;
+  height: 50px;
+  top: 88vh;
+  font-size: 14px;
+  padding-top: 1vh;
+}
+
+#body #footer #footer_content {
+  position: absolute;
+  left: 10px;
 }
 /*# sourceMappingURL=layout.css.map */
