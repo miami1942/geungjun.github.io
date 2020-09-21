@@ -1,5 +1,6 @@
 var calulator_result_map = new Map()
 calulator_result_map.set("radio_reset", 365)
+var my_error = true
 
 var my_year = $('#table_y').text()
 var my_month = add_zero($('#table_m').text())
@@ -29,9 +30,16 @@ function data_api(my_year) {
 function parsing_function(xml) {
     holiday_map.clear()
     var xmlDoc = xml.responseXML; //파싱
+    try {
+        var dateName = xmlDoc.getElementsByTagName("dateName"); //공휴일이 들어있는 배열값들
+        var locdate = xmlDoc.getElementsByTagName("locdate");
+    } catch {
+        if (my_error == true) {
+            alert("Cross-Origin Resource Sharing 정책으로 인한 오류 입니다. \n\n 크롬 바로가기 -> 속성 -> 대상 뒤에 \n --disable-web-security --user-data-dir=\"C:\\chrome\" \n를 적어서 우회해 주세요")
+            my_error = false
+        }
+    }
 
-    var dateName = xmlDoc.getElementsByTagName("dateName"); //공휴일이 들어있는 배열값들
-    var locdate = xmlDoc.getElementsByTagName("locdate");
 
     //console.log("dateName.length", locdate.length)
     for (i = 0; i < locdate.length; i++) {
@@ -86,7 +94,7 @@ function parsing_function(xml) {
     }
 
     function one_year_running() {
-        radio_only_sunday=0//일요일 다시 새야되서 초기화
+        radio_only_sunday = 0 //일요일 다시 새야되서 초기화
         var my_year = $('#table_y').text()
         var my_month = $('#table_m').text()
         var radio_only_holiday = locdate.length
@@ -100,7 +108,7 @@ function parsing_function(xml) {
         console.log(holiday_map)
         today = new Date(my_year, my_month - 1)
         create_cal()
-        
+
 
         for (i = 0; i < locdate.length; i++) {
             //console.log(dateName[i].firstChild.data)
@@ -157,4 +165,3 @@ $(".change_api").on('mouseup', function () {
     data_api(my_year, my_month)
 })
 data_api(my_year, my_month)
-$("#cal_sec_y").text(my_year)
