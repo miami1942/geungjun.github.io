@@ -35,7 +35,7 @@ function parsing_function(xml) {
         var locdate = xmlDoc.getElementsByTagName("locdate");
     } catch {
         if (my_error == true) {
-            alert("Cross-Origin Resource Sharing 정책으로 인한 오류 입니다. \n\n 크롬 바로가기 -> 속성 -> 대상 뒤에 \n --disable-web-security --user-data-dir=\"C:\\chrome\" \n를 적어서 우회해 주세요")
+            alert("Cross-Origin Resource Sharing 정책으로 인한 오류 입니다. \n\n 크롬 바로가기 -> 속성 -> 대상 뒤에 \n --disable-web-security --user-data-dir=\"C:\\chrome\" \n를 적어서 관리자 권한으로 실행해 주세요")
             my_error = false
         }
     }
