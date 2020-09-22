@@ -1,6 +1,10 @@
 @charset "UTF-8";
+#margin_this_page {
+  margin: 30px;
+}
+
 #menu header {
-  background-color: #00aeff;
+  background-color: #0b5395;
 }
 
 #menu header #gnb_list {
@@ -13,13 +17,9 @@
   background-color: #000000;
 }
 
-#fullpage #page1 {
-  margin: 20px;
-}
-
 #fullpage #page1 #title {
   position: absolute;
-  color: #00aeff;
+  color: #0b5395;
   font-weight: 700;
   font-size: 80px;
   top: 0px;
@@ -29,7 +29,7 @@
   position: absolute;
   color: #000000;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 40px;
   top: 250px;
 }
 
@@ -37,20 +37,17 @@
   position: absolute;
   width: 500px;
   height: 500px;
-  right: 30px;
+  left: 600px;
   bottom: 30px;
-}
-
-#fullpage #page2 {
-  margin: 20px;
+  background-image: url(../img/p1/Responsiveweb01.png);
 }
 
 #fullpage #page2 #title {
   position: absolute;
-  color: #00aeff;
+  color: #0b5395;
   font-weight: 700;
   font-size: 80px;
-  top: 100px;
+  top: 0px;
 }
 
 #fullpage #page2 #main_view #text {
@@ -59,109 +56,228 @@
   color: #000000;
   font-weight: 700;
   font-size: 30px;
-  top: 200px;
+  top: 150px;
   left: 50px;
+}
+
+#fullpage #page2 #main_view #text li {
+  margin-top: 15px;
 }
 
 #fullpage #page2 #main_view #img {
   position: absolute;
-  width: 500px;
-  height: 500px;
-  right: 200px;
-  bottom: 50px;
+  width: auto;
+  height: 350px;
+  left: 600px;
+  bottom: 100px;
 }
 
-#fullpage #page3 {
-  margin: 20px;
+#fullpage #page2 #main_view #img img {
+  width: 100%;
+  height: 100%;
+}
+
+#fullpage #page2 #main_view #img div {
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  transform: rotate(-5deg);
+  width: 365px;
+  font-size: 60px;
+  font-family: 'Nanum Pen Script', cursive;
 }
 
 #fullpage #page3 #title {
   position: absolute;
-  color: #00aeff;
+  color: #0b5395;
   font-weight: 700;
   font-size: 50px;
   top: 0px;
 }
 
-#fullpage #page3 #main_view #text1 {
+#fullpage #page3 #main_view #text1 #text_h {
   position: absolute;
-  color: #000000;
+  color: #0b5395;
   font-weight: 700;
   font-size: 30px;
   top: 100px;
   left: 550px;
 }
 
+#fullpage #page3 #main_view #text1 #line {
+  position: absolute;
+  display: block;
+  height: 2px;
+  width: 60vw;
+  left: 50%;
+  top: 150px;
+  transform: translate(-55%, 0%);
+  background-color: #0b5395;
+}
+
 #fullpage #page3 #main_view #img {
   position: absolute;
-  width: 400px;
-  height: 400px;
-  left: 150px;
-  bottom: 30px;
+  width: auto;
+  height: 300px;
+  left: 250px;
+  bottom: 100px;
+  border: 1px solid black;
+}
+
+#fullpage #page3 #main_view #img img {
+  width: 100%;
+  height: 100%;
 }
 
 #fullpage #page3 #main_view #text2 {
   position: absolute;
   color: #000000;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 25px;
   top: 170px;
-  left: 650px;
+  left: 550px;
 }
 
-#fullpage #page3 #main_view #text2 div {
-  display: inline;
+#fullpage #page3 #main_view #text2 li {
+  margin-top: 10px;
 }
 
-#fullpage #page4 {
-  margin: 20px;
+#fullpage #page3 #main_view #text2 #text_h {
+  margin-right: 10px;
+  color: #0b5395;
 }
 
 #fullpage #page4 #title {
   position: absolute;
-  color: #00aeff;
+  color: #0b5395;
   font-weight: 700;
   font-size: 50px;
   top: 0px;
 }
 
-#fullpage #page4 #main_view #text {
+#fullpage #page4 #main_view #text_ul01 {
   position: absolute;
-  color: #000000;
-  font-weight: 700;
-  font-size: 30px;
+  right: 60%;
   top: 150px;
-  left: 100px;
 }
 
-#fullpage #page5 {
-  margin: 20px;
+#fullpage #page4 #main_view #line {
+  position: absolute;
+  display: block;
+  height: 400px;
+  width: 3px;
+  left: 49%;
+  top: 150px;
+  transform: translate(0%, -5%);
+  background-color: #0b5395;
+}
+
+#fullpage #page4 #main_view #text_ul02 {
+  position: absolute;
+  left: 60%;
+  top: 150px;
+}
+
+#fullpage #page4 #main_view #text_h {
+  color: #0b5395;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+#fullpage #page4 #main_view #text_b {
+  color: #000000;
+  font-weight: 700;
+  font-size: 25px;
+  margin-bottom: 30px;
 }
 
 #fullpage #page5 #title {
   position: absolute;
-  color: #00aeff;
+  color: #0b5395;
   font-weight: 700;
   font-size: 50px;
   top: 0px;
 }
 
-#fullpage #page5 #main_view #text {
-  position: absolute;
-  color: #000000;
-  font-weight: 700;
-  font-size: 30px;
-  top: 150px;
+#fullpage #page5 #main_view #line01 {
+  position: relative;
   left: 100px;
+  margin-top: 60px;
 }
 
-#fullpage #page6 #page6_1 {
-  margin-left: 20px;
+#fullpage #page5 #main_view #line01 #circle {
+  display: inline-block;
+  background-color: #ffffff;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  line-height: 150px;
+  text-align: center;
+  margin-right: 40px;
+  box-shadow: 2px 2px 2px 2px gray;
+  overflow: hidden;
+}
+
+#fullpage #page5 #main_view #line01 #circle img {
+  width: 100%;
+  height: 100%;
+}
+
+#fullpage #page5 #main_view #line01 #circle #html_css {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  height: 50%;
+}
+
+#fullpage #page5 #main_view #line02 {
+  position: relative;
+  left: 100px;
+  margin-top: 30px;
+}
+
+#fullpage #page5 #main_view #line02 #circle {
+  display: inline-block;
+  background-color: #ffffff;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  line-height: 150px;
+  text-align: center;
+  margin-right: 40px;
+  box-shadow: 2px 2px 2px 2px gray;
+  overflow: hidden;
+}
+
+#fullpage #page5 #main_view #line02 #circle img {
+  width: 100%;
+  height: 100%;
+}
+
+#fullpage #page5 #main_view #line {
+  position: absolute;
+  display: block;
+  height: 3px;
+  width: 90vw;
+  left: 50%;
+  bottom: 80px;
+  transform: translate(-50%, 0%);
+  background-color: #0b5395;
+}
+
+#fullpage #page5 #main_view #sub_info {
+  position: absolute;
+  color: #0b5395;
+  font-weight: 600;
+  font-size: 20px;
+  bottom: 40px;
+  left: 50%;
+  transform: translate(-50%, 0%);
 }
 
 #fullpage #page6 #page6_1 #title {
   position: absolute;
-  color: #00aeff;
+  color: #0b5395;
   font-weight: 700;
   font-size: 50px;
   top: 0px;
@@ -190,13 +306,9 @@
   display: inline;
 }
 
-#fullpage #page6 #page6_2 {
-  margin-left: 20px;
-}
-
 #fullpage #page6 #page6_2 #title {
   position: absolute;
-  color: #00aeff;
+  color: #0b5395;
   font-weight: 700;
   font-size: 50px;
   top: 0px;
@@ -225,13 +337,9 @@
   display: inline;
 }
 
-#fullpage #page6 #page6_3 {
-  margin-left: 20px;
-}
-
 #fullpage #page6 #page6_3 #title {
   position: absolute;
-  color: #00aeff;
+  color: #0b5395;
   font-weight: 700;
   font-size: 50px;
   top: 0px;
@@ -262,6 +370,6 @@
 
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
-  background: #00aeff;
+  background: #0b5395;
 }
 /*# sourceMappingURL=main.css.map */
