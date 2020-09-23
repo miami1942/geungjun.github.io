@@ -2,14 +2,20 @@ $header_color: #000000;
 $main_color : rgb(11, 83, 149);
 //$main_color : rgb(0, 174, 255);
 $font_color : #000000;
+$menu_color : #ffffff;
 
 #margin_this_page {
     margin: 30px;
 }
 
+img {
+    width: 100%;
+    height: 100%;
+}
+
 #menu {
     header {
-        background-color: $main_color;
+        background-color: $menu_color;
 
         #gnb_list {
             color: $header_color;
@@ -19,7 +25,7 @@ $font_color : #000000;
     }
 
     header::after {
-        background-color: $header_color;
+        background-color: $main_color;
     }
 }
 
@@ -79,15 +85,10 @@ $font_color : #000000;
 
             #img {
                 position: absolute;
-                width: auto;
+                width: 503px;
                 height: 350px;
                 left: 600px;
                 bottom: 100px;
-
-                img {
-                    width: 100%;
-                    height: 100%;
-                }
 
                 div {
                     position: absolute;
@@ -138,16 +139,11 @@ $font_color : #000000;
 
             #img {
                 position: absolute;
-                width: auto;
+                width: 225px;
                 height: 300px;
                 left: 250px;
                 bottom: 100px;
                 border: 1px solid black;
-
-                img {
-                    width: 100%;
-                    height: 100%;
-                }
             }
 
             #text2 {
@@ -185,7 +181,7 @@ $font_color : #000000;
             #text_ul01 {
                 position: absolute;
                 right: 60%;
-                top: 150px;
+                top: 140px;
             }
 
             #line {
@@ -202,20 +198,22 @@ $font_color : #000000;
             #text_ul02 {
                 position: absolute;
                 left: 60%;
-                top: 150px;
+                top: 55%;
+                transform: translate(0%, -50%);
             }
 
             #text_h {
                 color: $main_color;
                 font-weight: 700;
-                font-size: 30px;
+                font-size: 27px;
             }
 
             #text_b {
                 color: $font_color;
                 font-weight: 700;
-                font-size: 25px;
-                margin-bottom: 30px;
+                font-size: 17px;
+                margin-bottom: 20px;
+                color: $font_color;
             }
         }
     }
@@ -234,6 +232,7 @@ $font_color : #000000;
                 position: relative;
                 left: 100px;
                 margin-top: 60px;
+
                 #circle {
                     display: inline-block;
                     background-color: #ffffff;
@@ -246,11 +245,8 @@ $font_color : #000000;
                     margin-right: 40px;
                     box-shadow: 2px 2px 2px 2px gray;
                     overflow: hidden;
-                    img{
-                        width: 100%;
-                        height: 100%;
-                    }
-                    #html_css{
+
+                    #html_css {
                         position: relative;
                         top: 25%;
                         width: 100%;
@@ -263,6 +259,7 @@ $font_color : #000000;
                 position: relative;
                 left: 100px;
                 margin-top: 30px;
+
                 #circle {
                     display: inline-block;
                     background-color: #ffffff;
@@ -275,10 +272,6 @@ $font_color : #000000;
                     margin-right: 40px;
                     box-shadow: 2px 2px 2px 2px gray;
                     overflow: hidden;
-                    img{
-                        width: 100%;
-                        height: 100%;
-                    }
                 }
             }
 
@@ -296,6 +289,8 @@ $font_color : #000000;
             #sub_info {
                 position: absolute;
                 color: $main_color;
+                width: 700px;
+                text-align: center;
                 font-weight: 600;
                 font-size: 20px;
                 bottom: 40px;
@@ -314,28 +309,72 @@ $font_color : #000000;
                 font-size: 50px;
                 top: 0px;
             }
+            .slide_sign{
+                position: absolute;
+                color: #ff3939;
+                font-weight: 700;
+                font-size: 35px;
+                right: 120px;
+            }
 
             #main_view {
                 #img {
                     position: absolute;
-                    width: 400px;
+                    width: 350px;
+                    height: auto;
+                    left: 80px;
+                    top: 250px;
+                    border: 1px solid $main_color;
+                }
+
+                #line {
+                    position: absolute;
+                    display: block;
                     height: 400px;
-                    left: 30px;
-                    bottom: 50px;
+                    width: 3px;
+                    left: 465px;
+                    top: 150px;
+                    transform: translate(0%, -5%);
+                    background-color: $main_color;
                 }
 
                 #text {
-                    position: absolute;
-                    position: absolute;
-                    color: $font_color;
-                    font-weight: 700;
-                    font-size: 30px;
+                    position: relative;
                     top: 100px;
-                    left: 450px;
-                    margin: 50px;
+                    left: 470px;
 
-                    div {
-                        display: inline;
+                    >li {
+                        display: flex;
+                        margin-bottom: 15px;
+                    }
+
+                    #text_h {
+                        width: 150px;
+                        color: $main_color;
+                        font-weight: 700;
+                        font-size: 27px;
+                    }
+
+                    #text_b {
+                        width: 550px;
+                        height: auto;
+                        color: $font_color;
+                        font-weight: 700;
+                        font-size: 21px;
+                        color: $font_color;
+                    }
+
+                    #ul {
+                        li{
+                            margin-bottom: 5px;
+                        }
+                        li::before {
+                            color: $main_color;
+                            content: "\2022";//원모양 CSS Code/unicode
+                            font-weight: bold;
+                            display: inline-block;
+                            width: 0.8em;
+                        }
                     }
                 }
             }

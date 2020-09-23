@@ -3,8 +3,13 @@
   margin: 30px;
 }
 
+img {
+  width: 100%;
+  height: 100%;
+}
+
 #menu header {
-  background-color: #0b5395;
+  background-color: #ffffff;
 }
 
 #menu header #gnb_list {
@@ -14,7 +19,7 @@
 }
 
 #menu header::after {
-  background-color: #000000;
+  background-color: #0b5395;
 }
 
 #fullpage #page1 #title {
@@ -66,15 +71,10 @@
 
 #fullpage #page2 #main_view #img {
   position: absolute;
-  width: auto;
+  width: 503px;
   height: 350px;
   left: 600px;
   bottom: 100px;
-}
-
-#fullpage #page2 #main_view #img img {
-  width: 100%;
-  height: 100%;
 }
 
 #fullpage #page2 #main_view #img div {
@@ -117,16 +117,11 @@
 
 #fullpage #page3 #main_view #img {
   position: absolute;
-  width: auto;
+  width: 225px;
   height: 300px;
   left: 250px;
   bottom: 100px;
   border: 1px solid black;
-}
-
-#fullpage #page3 #main_view #img img {
-  width: 100%;
-  height: 100%;
 }
 
 #fullpage #page3 #main_view #text2 {
@@ -158,7 +153,7 @@
 #fullpage #page4 #main_view #text_ul01 {
   position: absolute;
   right: 60%;
-  top: 150px;
+  top: 140px;
 }
 
 #fullpage #page4 #main_view #line {
@@ -175,20 +170,22 @@
 #fullpage #page4 #main_view #text_ul02 {
   position: absolute;
   left: 60%;
-  top: 150px;
+  top: 55%;
+  transform: translate(0%, -50%);
 }
 
 #fullpage #page4 #main_view #text_h {
   color: #0b5395;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 27px;
 }
 
 #fullpage #page4 #main_view #text_b {
   color: #000000;
   font-weight: 700;
-  font-size: 25px;
-  margin-bottom: 30px;
+  font-size: 17px;
+  margin-bottom: 20px;
+  color: #000000;
 }
 
 #fullpage #page5 #title {
@@ -218,11 +215,6 @@
   overflow: hidden;
 }
 
-#fullpage #page5 #main_view #line01 #circle img {
-  width: 100%;
-  height: 100%;
-}
-
 #fullpage #page5 #main_view #line01 #circle #html_css {
   position: relative;
   top: 25%;
@@ -249,11 +241,6 @@
   overflow: hidden;
 }
 
-#fullpage #page5 #main_view #line02 #circle img {
-  width: 100%;
-  height: 100%;
-}
-
 #fullpage #page5 #main_view #line {
   position: absolute;
   display: block;
@@ -268,6 +255,8 @@
 #fullpage #page5 #main_view #sub_info {
   position: absolute;
   color: #0b5395;
+  width: 700px;
+  text-align: center;
   font-weight: 600;
   font-size: 20px;
   bottom: 40px;
@@ -283,27 +272,71 @@
   top: 0px;
 }
 
+#fullpage #page6 #page6_1 .slide_sign {
+  position: absolute;
+  color: #ff3939;
+  font-weight: 700;
+  font-size: 35px;
+  right: 120px;
+}
+
 #fullpage #page6 #page6_1 #main_view #img {
   position: absolute;
-  width: 400px;
+  width: 350px;
+  height: auto;
+  left: 80px;
+  top: 250px;
+  border: 1px solid #0b5395;
+}
+
+#fullpage #page6 #page6_1 #main_view #line {
+  position: absolute;
+  display: block;
   height: 400px;
-  left: 30px;
-  bottom: 50px;
+  width: 3px;
+  left: 465px;
+  top: 150px;
+  transform: translate(0%, -5%);
+  background-color: #0b5395;
 }
 
 #fullpage #page6 #page6_1 #main_view #text {
-  position: absolute;
-  position: absolute;
-  color: #000000;
-  font-weight: 700;
-  font-size: 30px;
+  position: relative;
   top: 100px;
-  left: 450px;
-  margin: 50px;
+  left: 470px;
 }
 
-#fullpage #page6 #page6_1 #main_view #text div {
-  display: inline;
+#fullpage #page6 #page6_1 #main_view #text > li {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+#fullpage #page6 #page6_1 #main_view #text #text_h {
+  width: 150px;
+  color: #0b5395;
+  font-weight: 700;
+  font-size: 27px;
+}
+
+#fullpage #page6 #page6_1 #main_view #text #text_b {
+  width: 550px;
+  height: auto;
+  color: #000000;
+  font-weight: 700;
+  font-size: 21px;
+  color: #000000;
+}
+
+#fullpage #page6 #page6_1 #main_view #text #ul li {
+  margin-bottom: 5px;
+}
+
+#fullpage #page6 #page6_1 #main_view #text #ul li::before {
+  color: #0b5395;
+  content: "\2022";
+  font-weight: bold;
+  display: inline-block;
+  width: 0.8em;
 }
 
 #fullpage #page6 #page6_2 #title {

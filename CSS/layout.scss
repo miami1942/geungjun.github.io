@@ -1,14 +1,27 @@
+$main_color : rgb(11, 83, 149);
+
 * {
     margin: 0;
     padding: 0;
     list-style: none; //리스트 테이블마냥 만들어줌
 }
+
 a {
     text-decoration: none;
     color: inherit;
 }
 
-#menu{
+.swiper-slide {
+    width: 100vw;
+    height: 100vh;
+}
+
+.section {
+    width: 100vw;
+    height: 100vh;
+}
+
+#menu {
     #expand_header {
         position: fixed;
         z-index: 1000;
@@ -16,7 +29,8 @@ a {
         right: 0px;
         margin-right: 5px;
         cursor: pointer;
-    
+        z-index: 800;
+
         span {
             position: relative;
             display: block;
@@ -26,29 +40,35 @@ a {
             margin: 5px;
             transition: transform .2s ease
         }
-        #span1{
+
+        #span1 {
             width: 25px;
         }
-        #span2{
+
+        #span2 {
             width: 50px;
         }
-        #span3{
+
+        #span3 {
             bottom: 20px;
             left: 25px;
             width: 25px;
         }
     }
-    #expand_header.on{
-        #span1{
+
+    #expand_header.on {
+        #span1 {
             top: 5px;
             left: 3px;
             width: 25px;
             transform: translateX(0px) rotate(45deg);
         }
-        #span2{
-            transform:rotate(-45deg) translate(0%,0%);
+
+        #span2 {
+            transform: rotate(-45deg) translate(0%, 0%);
         }
-        #span3{
+
+        #span3 {
             left: 23px;
             top: -1px;
             width: 25px;
@@ -63,19 +83,21 @@ a {
         z-index: 95;
         overflow: hidden;
         transition: 0.25s ease;
-    
+        border-bottom: 2px solid $main_color;
+        z-index: 700;
+
         #gnb {
             position: relative;
             z-index: 70; //after에 닿아도 on되도록 해줌
             text-align: center;
-    
+
             #gnb_list {
                 position: relative;
                 display: inline-table;
                 margin-left: 30px;
                 font-size: 50px;
                 top: 0px;
-    
+
                 #gnb_content {
                     li {
                         margin: 15px;
@@ -84,84 +106,34 @@ a {
                 }
             }
         }
-    } 
+    }
+
     header::after {
         display: block;
         position: absolute;
         width: 100%;
         top: 70px; //이거 왜 크롬에선 안되냐
         content: "";
-        height: 1px;
-    } 
+        height: 2px;
+    }
+
     header.on {
         height: 270px;
-    
-        #expand_header {
-        }
+
+        #expand_header {}
     }
 }
 
-#swiper_option{
+#swiper_option {
     position: relative;
     bottom: 30px;
     margin: 0 30px 0px 30px;
-    .swiper-pagination{
+
+    .swiper-pagination {
         bottom: -27px;
         left: 45%;
         transform: translate(-50% 0%);
     }
-}
-
-#page1 {
-    width: 100%;
-    height: 100%;
-    //background-color: cadetblue;
-}
-
-#page2 {
-    width: 100%;
-    height: 100%;
-    //background-color: chocolate;
-}
-
-#page3 {
-    #swiper_option {
-        position: relative;
-        width: 500px;
-        left: 560px;
-
-        .swiper-pagination {
-            bottom: 12px;
-            left: 40px;
-        }
-
-        .swiper-button-prev {
-            bottom: 20px;
-            left: 0px;
-            width: 20px;
-        }
-
-        .swiper-button-next {
-            bottom: 20px;
-            left: 165px;
-        }
-    }
-
-    #page3_1 {
-        //background-color: lightgreen;
-    }
-
-    #page3_2 {
-        //background-color: lightskyblue;
-    }
-
-    #page3_3 {
-        //background-color: magenta;
-    }
-}
-
-#page4 {
-    //background-color: darkkhaki;
 }
 
 footer {
