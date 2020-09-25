@@ -57,7 +57,7 @@ new fullpage('#fullpage', {
                 slide_switch = 0
                 setTimeout(function () {
                     slide()
-                }, 1000);
+                }, 1200);
 
             }
         }

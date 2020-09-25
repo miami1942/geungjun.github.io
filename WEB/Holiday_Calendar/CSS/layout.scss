@@ -65,7 +65,7 @@ a {
                 width: 575px;
 
                 td {
-                    height: 51px;
+                    height: 49px;
                     width: 74px;
                 }
 
@@ -79,17 +79,22 @@ a {
 
                 #created_row {
                     td {
+                        position: relative;
                         #cal_text {
-                            position: relative;
+                            position: absolute;
                             width: 0px;
                             height: 0px;
-                            top: -25px;
+                            top: -0px;
                             left: 5px;
                         }
 
                         #holiday_name {
-                            position: relative;
+                            position: absolute;
                             height: 0px;
+                            font-size: 12px;
+                            text-align: right;
+                            bottom: 17px;
+                            right: 2px;
                         }
                     }
                 }

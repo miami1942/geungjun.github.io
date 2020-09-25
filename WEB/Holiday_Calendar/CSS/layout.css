@@ -69,7 +69,7 @@ a {
 }
 
 #body #main #right_section table td {
-  height: 51px;
+  height: 49px;
   width: 74px;
 }
 
@@ -77,17 +77,25 @@ a {
   display: inline;
 }
 
-#body #main #right_section table #created_row td #cal_text {
+#body #main #right_section table #created_row td {
   position: relative;
+}
+
+#body #main #right_section table #created_row td #cal_text {
+  position: absolute;
   width: 0px;
   height: 0px;
-  top: -25px;
+  top: -0px;
   left: 5px;
 }
 
 #body #main #right_section table #created_row td #holiday_name {
-  position: relative;
+  position: absolute;
   height: 0px;
+  font-size: 12px;
+  text-align: right;
+  bottom: 17px;
+  right: 2px;
 }
 
 #body #Calculator_section {
