@@ -1,6 +1,6 @@
 @charset "UTF-8";
 html {
-  font-size: 1vmin;
+  font-size: 10px;
 }
 
 img {
@@ -22,63 +22,68 @@ img {
   background-color: #0b5395;
 }
 
-body {
-  font-size: 0px;
-}
-
-.main_title {
-  font-size: 11rem;
-  font-weight: 700;
-  color: #0b5395;
-}
-
-@media (max-width: 420px) {
-  .main_title {
-    font-size: 10rem;
-  }
-}
-
-#fullpage #page1 .main_left #text {
-  color: #000000;
-  font-weight: 700;
-  font-size: 5rem;
-}
-
-#fullpage #page1 .main_right .img {
-  width: 58rem;
-  height: auto;
-}
-
-#fullpage #page2 .main_left #text {
-  color: #000000;
-  font-weight: 700;
-  font-size: 4.5rem;
-}
-
-#fullpage #page2 .main_left #text li {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 1rem;
-}
-
-#fullpage #page2 .main_left #text li #content {
-  width: 50rem;
-}
-
-#fullpage #page2 .main_right .img {
-  width: 80rem;
-  height: auto;
-  position: relative;
-}
-
-#fullpage #page2 .main_right .img div {
+#fullpage #page1 #title {
   position: absolute;
-  width: 43rem;
-  top: 50%;
-  left: 50%;
+  color: #0b5395;
+  font-weight: 700;
+  font-size: 8vh;
+  top: 0px;
+}
+
+#fullpage #page1 #main_view #text {
+  position: absolute;
+  color: #000000;
+  font-weight: 700;
+  font-size: 40px;
+  top: 250px;
+}
+
+#fullpage #page1 #main_view #img {
+  position: absolute;
+  width: 50vh;
+  height: 50vh;
+  left: 600px;
+  bottom: 30px;
+  background-image: url(../img/p1/Responsiveweb01.png);
+}
+
+#fullpage #page2 #title {
+  position: absolute;
+  color: #0b5395;
+  font-weight: 700;
+  font-size: 80px;
+  top: 0px;
+}
+
+#fullpage #page2 #main_view #text {
+  position: absolute;
+  position: absolute;
+  color: #000000;
+  font-weight: 700;
+  font-size: 30px;
+  top: 150px;
+  left: 50px;
+}
+
+#fullpage #page2 #main_view #text li {
+  margin-top: 15px;
+}
+
+#fullpage #page2 #main_view #img {
+  position: absolute;
+  width: 503px;
+  height: 350px;
+  left: 600px;
+  bottom: 100px;
+}
+
+#fullpage #page2 #main_view #img div {
+  position: absolute;
+  top: 25%;
+  left: 15%;
   transform: rotate(-5deg);
-  transform: translate(-50%, -50%);
-  font-size: 7rem;
+  width: 365px;
+  font-size: 60px;
   font-family: 'Nanum Pen Script', cursive;
 }
 
@@ -545,4 +550,4 @@ body {
 .fp-slidesNav ul li a span {
   background: #0b5395;
 }
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main copy.css.map */

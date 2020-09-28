@@ -3,14 +3,15 @@ $main_color : rgb(11, 83, 149);
 //$main_color : rgb(0, 174, 255);
 $font_color : #000000;
 $menu_color : #ffffff;
-$my_min_width : 320px;
+$my_min_width : 420px;
 
-html{
-    font-size: 1vw;
+html {
+    font-size: 1vmin;//min으로 하니깐 잘 맞는다
 }
+
 img {
-    width: 30rem;
-    height: 30rem;
+    width: 100%;
+    height: 100%;
 }
 
 #menu {
@@ -28,84 +29,67 @@ img {
         background-color: $main_color;
     }
 }
-#main_title {
-    width: inherit;
-    min-height: 15%;
-    color: $main_color;
-    font-weight: 700;
-    font-size: 7rem;
-    top: 0px;
-}
-#main_bottom{
-    position: relative;
-    min-height: 17%;
-}
-body{
+
+body {
     font-size: 0px;
 }
+.main_title{
+    font-size: 11rem;
+    font-weight: 700;
+    color: $main_color;
+    @media (max-width: $my_min_width) {
+        font-size: 10rem;
+    }
+}
+
 #fullpage {
     #page1 {
-        #main_view {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            width: 100%;
-            height: 66%;
+        .main_left {
             #text {
-                width: 50%;
-                min-width: $my_min_width;
                 color: $font_color;
                 font-weight: 700;
-                font-size: 3rem;
+                font-size: 5rem;
             }
+        }
 
-            #img {
-                width: 50%;
-                min-width: $my_min_width;
+        .main_right {
+            .img {
+                width: 58rem;
+                height: auto;
             }
         }
     }
 
     #page2 {
-        #title {
-            position: absolute;
-            color: $main_color;
-            font-weight: 700;
-            font-size: 80px;
-            top: 0px;
-        }
-
-        #main_view {
+        .main_left {
             #text {
-                position: absolute;
-                position: absolute;
                 color: $font_color;
                 font-weight: 700;
-                font-size: 30px;
-                top: 150px;
-                left: 50px;
-
+                font-size: 4.5rem;
                 li {
-                    margin-top: 15px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-top: 1rem;
+                    #content{
+                        width: 50rem;
+                    }
                 }
             }
+        }
 
-            #img {
-                position: absolute;
-                width: 503px;
-                height: 350px;
-                left: 600px;
-                bottom: 100px;
-
+        .main_right {
+            .img {
+                width: 80rem;
+                height: auto;
+                position: relative;
                 div {
                     position: absolute;
-                    top: 25%;
-                    left: 15%;
-                    //transform: translate(-50%, -50%);
-                    //transform-origin: 100% 100%;
+                    width: 43rem;
+                    top: 50%;
+                    left: 50%;
                     transform: rotate(-5deg);
-                    width: 365px;
-                    font-size: 60px;
+                    transform: translate(-50%, -50%);//rotate위에 있으면 에러뜸
+                    font-size: 7rem;
                     font-family: 'Nanum Pen Script', cursive;
                 }
             }
@@ -473,7 +457,7 @@ body{
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                
+
 
                 #left {
                     #img {

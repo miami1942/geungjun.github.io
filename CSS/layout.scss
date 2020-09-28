@@ -1,11 +1,17 @@
+$header_color: #000000;
 $main_color : rgb(11, 83, 149);
+//$main_color : rgb(0, 174, 255);
+$font_color : #000000;
+$menu_color : #ffffff;
+$my_min_width : 420px;
 
 * {
     margin: 0;
     padding: 0;
     list-style: none; //리스트 테이블마냥 만들어줌
 }
-html{
+
+html {
     font-size: 1vw;
 }
 
@@ -13,25 +19,35 @@ a {
     text-decoration: none;
     color: inherit;
 }
-/**************************************fullpage***************************************/
+
+/*******************************______fullpage______***************************************/
 .section {
     max-width: 1260px;
     margin: auto;
 }
+
 #fp-nav.fp-right {
     right: 1rem;
 }
 
-#this_page{
-    height: inherit;
-    margin: 0 3rem;
+#swiper_option {
+    position: relative;
+    bottom: 30px;
+    margin: 0 20px 0px 20px;
+    display: flex;
+    justify-content: center;
+
+    .swiper-pagination {
+        bottom: -27px;
+    }
 }
 
+/******************************______menu______*********************************************/
 #menu {
     #expand_header {
         position: fixed;
         z-index: 1000;
-        top: 5px;
+        top: 4px;
         right: 0px;
         margin-right: 5px;
         cursor: pointer;
@@ -80,6 +96,9 @@ a {
             width: 25px;
             transform: translateX(0px) rotate(45deg);
         }
+        @media (max-width: $my_min_width) {
+            display: none;
+        }
     }
 
     header {
@@ -96,52 +115,129 @@ a {
             position: relative;
             z-index: 70; //after에 닿아도 on되도록 해줌
             text-align: center;
+            @media (max-width: $my_min_width) {
+                text-align: left;
+            }
 
             #gnb_list {
                 position: relative;
                 display: inline-table;
-                margin-left: 30px;
-                font-size: 50px;
+                margin-right: 5rem;
+                font-size: 7rem;
                 top: 0px;
+                @media (max-width: $my_min_width) {
+                    text-align: center;
+                }
 
                 #gnb_content {
                     li {
-                        margin: 15px;
-                        font-size: 30px;
+                        margin: 2rem;
+                        font-size: 5rem;
+                        width: 40rem;
                     }
                 }
             }
         }
     }
 
-    header::after {
+    #gnb_list>a::after {
+        content: "";
         display: block;
         position: absolute;
-        width: 100%;
-        top: 70px; //이거 왜 크롬에선 안되냐
-        content: "";
+        background-color: $main_color;
+        width: 500%;
+        left: -200%;
         height: 2px;
     }
 
-    header.on {
-        height: 270px;
-
-        #expand_header {}
+    #gnb_list>a::before {
+        content: "";
+        display: block;
+        position: absolute;
+        background-color: $main_color;
+        width: 500%;
+        left: -200%;
+        height: 2px;
     }
 }
 
-#swiper_option {
-    position: relative;
-    bottom: 30px;
-    margin: 0 20px 0px 20px;
+/******************************______main______*********************************************/
+#this_page {
+    background-color: rgb(104, 104, 104);
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+    margin: 0 3rem;
+}
 
-    .swiper-pagination {
-        bottom: -27px;
+.main_title {
+    background-color: darksalmon;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 17%;
+
+    @media (max-width: $my_min_width) {
+        height: 10%;
     }
 }
 
+.main_left {
+    background-color: rgb(101, 151, 25);
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 66%;
+
+    @media (max-width: $my_min_width) {
+        .img {
+            margin: auto;
+        }
+
+        width: 100%;
+        height: 40%;
+    }
+
+    #text {
+        margin-left: 3rem;
+    }
+
+}
+
+
+.main_right {
+    background-color: rgb(20, 161, 75);
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 66%;
+
+    @media (max-width: $my_min_width) {
+        .img {
+            margin: auto;
+        }
+
+        #text {
+            margin-left: 3rem;
+        }
+
+        width: 100%;
+        height: 40%;
+    }
+}
+
+.main_bottom {
+    background-color: hotpink;
+    width: 100%;
+    height: 17%;
+
+    @media (max-width: $my_min_width) {
+        height: 10%;
+    }
+}
+
+/********************************____footer____*****************************************/
 footer {
     height: 150px;
 
