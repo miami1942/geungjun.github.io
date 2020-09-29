@@ -5,31 +5,15 @@ $font_color : #000000;
 $menu_color : #ffffff;
 $my_min_width : 420px;
 
-/******************************______main_type_C_____*********************************************/
+/******************************______main_type_D_____*********************************************/
 
-.main_title_C {
-    background-color: darksalmon;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 17%;
-    font-size: 7rem;
-    font-weight: 700;
-    color: $main_color;
-
-    @media (max-width: $my_min_width) {
-        height: 10%;
-        font-size: 7rem;
-    }
-}
-
-.main_middle_C {
-    background-color: rgb(101, 151, 25);
+.main_up_D {
+    background-color: rgb(161, 214, 82);
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 100%;
-    height: 66%;
+    height: 33%;
 
     @media (max-width: $my_min_width) {
         .img {
@@ -37,7 +21,7 @@ $my_min_width : 420px;
         }
 
         width: 100%;
-        height: 80%;
+        height: 40%;
     }
 
     #text {
@@ -46,12 +30,25 @@ $my_min_width : 420px;
 
 }
 
-.main_bottom_C {
-    background-color: hotpink;
+.main_down_D {
+    background-color: rgb(101, 151, 25);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     width: 100%;
-    height: 17%;
+    height: 33%;
 
     @media (max-width: $my_min_width) {
-        height: 10%;
+        .img {
+            margin: auto;
+        }
+
+        width: 100%;
+        height: 40%;
     }
+
+    #text {
+        margin-left: 3rem;
+    }
+
 }
