@@ -26,18 +26,6 @@ body {
   font-size: 0px;
 }
 
-.main_title {
-  font-size: 11rem;
-  font-weight: 700;
-  color: #0b5395;
-}
-
-@media (max-width: 420px) {
-  .main_title {
-    font-size: 10rem;
-  }
-}
-
 #fullpage #page1 .main_left #text {
   color: #000000;
   font-weight: 700;
@@ -82,181 +70,161 @@ body {
   font-family: 'Nanum Pen Script', cursive;
 }
 
-#fullpage #page3 #title {
-  position: absolute;
+#fullpage #page3 .main_type_B #text #text_h {
   color: #0b5395;
   font-weight: 700;
-  font-size: 50px;
-  top: 0px;
+  font-size: 3rem;
 }
 
-#fullpage #page3 #main_view #text1 #text_h {
-  position: absolute;
-  color: #0b5395;
-  font-weight: 700;
-  font-size: 30px;
-  top: 100px;
-  left: 550px;
-}
-
-#fullpage #page3 #main_view #text1 #line {
-  position: absolute;
+#fullpage #page3 .main_type_B #text #line {
+  position: relative;
   display: block;
   height: 2px;
-  width: 60vw;
-  left: 50%;
-  top: 150px;
-  transform: translate(-55%, 0%);
+  width: 80rem;
   background-color: #0b5395;
 }
 
-#fullpage #page3 #main_view #img {
-  position: absolute;
-  width: 225px;
-  height: 300px;
-  left: 250px;
-  bottom: 100px;
+#fullpage #page3 .main_left_B #img {
+  position: relative;
+  width: 30rem;
+  height: auto;
   border: 1px solid black;
 }
 
-#fullpage #page3 #main_view #text2 {
-  position: absolute;
+#fullpage #page3 .main_right_B #text {
+  position: relative;
   color: #000000;
   font-weight: 700;
-  font-size: 25px;
-  top: 170px;
-  left: 550px;
+  font-size: 3rem;
 }
 
-#fullpage #page3 #main_view #text2 li {
-  margin-top: 10px;
+#fullpage #page3 .main_right_B #text li {
+  margin-top: 1rem;
 }
 
-#fullpage #page3 #main_view #text2 #text_h {
-  margin-right: 10px;
+#fullpage #page3 .main_right_B #text #text_h {
+  margin-right: 1rem;
   color: #0b5395;
 }
 
-#fullpage #page4 #title {
-  position: absolute;
+#fullpage #page4 .main_left #text #text_h {
   color: #0b5395;
   font-weight: 700;
-  font-size: 50px;
-  top: 0px;
+  font-size: 3rem;
 }
 
-#fullpage #page4 #main_view #text_ul01 {
-  position: absolute;
-  right: 60%;
-  top: 140px;
+#fullpage #page4 .main_left #text #text_b {
+  color: #000000;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #000000;
 }
 
-#fullpage #page4 #main_view #line {
-  position: absolute;
+#fullpage #page4 .main_left #line {
+  position: relative;
   display: block;
-  height: 400px;
+  height: 50rem;
   width: 3px;
-  left: 49%;
-  top: 150px;
-  transform: translate(0%, -5%);
   background-color: #0b5395;
 }
 
-#fullpage #page4 #main_view #text_ul02 {
-  position: absolute;
-  left: 60%;
-  top: 55%;
-  transform: translate(0%, -50%);
+@media (max-width: 420px) {
+  #fullpage #page4 .main_left #line {
+    display: none;
+  }
 }
 
-#fullpage #page4 #main_view #text_h {
+#fullpage #page4 .main_right #text #text_h {
   color: #0b5395;
   font-weight: 700;
-  font-size: 27px;
+  font-size: 3rem;
 }
 
-#fullpage #page4 #main_view #text_b {
+#fullpage #page4 .main_right #text #text_b {
   color: #000000;
   font-weight: 700;
-  font-size: 17px;
-  margin-bottom: 20px;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
   color: #000000;
 }
 
-#fullpage #page5 #title {
-  position: absolute;
-  color: #0b5395;
-  font-weight: 700;
-  font-size: 50px;
-  top: 0px;
-}
-
-#fullpage #page5 #main_view #line01 {
-  position: relative;
-  left: 100px;
-  padding-top: 60px;
-}
-
-#fullpage #page5 #main_view #line01 #circle {
+#fullpage #page5 .main_up_C #line01 #circle {
   display: inline-block;
   background-color: #ffffff;
-  width: 160px;
-  height: 160px;
+  width: 20rem;
+  height: 20rem;
   border-radius: 50%;
-  line-height: 150px;
   text-align: center;
-  margin-right: 40px;
-  box-shadow: 2px 2px 2px 2px gray;
+  box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem #585858;
   overflow: hidden;
 }
 
-#fullpage #page5 #main_view #line01 #circle #html_css {
+@media (max-width: 420px) {
+  #fullpage #page5 .main_up_C #line01 #circle {
+    width: 24rem;
+    height: 24rem;
+  }
+}
+
+#fullpage #page5 .main_up_C #line01 #circle #html_css {
   position: relative;
   top: 25%;
   width: 100%;
   height: 50%;
 }
 
-#fullpage #page5 #main_view #line02 {
-  position: relative;
-  left: 100px;
-  margin-top: 30px;
-}
-
-#fullpage #page5 #main_view #line02 #circle {
+#fullpage #page5 .main_down_C #line02 #circle {
   display: inline-block;
   background-color: #ffffff;
-  width: 160px;
-  height: 160px;
+  width: 20rem;
+  height: 20rem;
   border-radius: 50%;
-  line-height: 150px;
   text-align: center;
-  margin-right: 40px;
-  box-shadow: 2px 2px 2px 2px gray;
+  box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem #585858;
   overflow: hidden;
 }
 
-#fullpage #page5 #main_view #line {
-  position: absolute;
+@media (max-width: 420px) {
+  #fullpage #page5 .main_down_C #line02 #circle {
+    width: 24rem;
+    height: 24rem;
+  }
+}
+
+#fullpage #page5 .main_down_C #line02 #circle #html_css {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  height: 50%;
+}
+
+#fullpage #page5 .main_bottom_C #line {
   display: block;
   height: 3px;
-  width: 90vw;
-  left: 50%;
-  bottom: 80px;
-  transform: translate(-50%, 0%);
+  width: 110rem;
   background-color: #0b5395;
 }
 
-#fullpage #page5 #main_view #sub_info {
-  position: absolute;
+@media (max-width: 420px) {
+  #fullpage #page5 .main_bottom_C #line {
+    width: 85rem;
+  }
+}
+
+#fullpage #page5 .main_bottom_C #sub_info {
   color: #0b5395;
-  width: 700px;
+  width: 110rem;
   text-align: center;
   font-weight: 600;
-  font-size: 20px;
-  bottom: 40px;
-  left: 50%;
-  transform: translate(-50%, 0%);
+  font-size: 3rem;
+}
+
+@media (max-width: 420px) {
+  #fullpage #page5 .main_bottom_C #sub_info {
+    width: 85rem;
+    font-size: 4rem;
+  }
 }
 
 #fullpage #page6 #page6_1 #title {

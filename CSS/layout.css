@@ -109,6 +109,7 @@ a {
   position: relative;
   z-index: 70;
   text-align: center;
+  margin-left: 8rem;
 }
 
 @media (max-width: 420px) {
@@ -117,7 +118,7 @@ a {
   }
 }
 
-#menu header #gnb #gnb_list {
+#menu header #gnb ul #gnb_list {
   position: relative;
   display: inline-table;
   margin-right: 5rem;
@@ -126,15 +127,23 @@ a {
 }
 
 @media (max-width: 420px) {
-  #menu header #gnb #gnb_list {
+  #menu header #gnb ul #gnb_list {
     text-align: center;
+    margin-right: 0rem;
   }
 }
 
-#menu header #gnb #gnb_list #gnb_content li {
-  margin: 2rem;
-  font-size: 5rem;
-  width: 40rem;
+#menu header #gnb ul #gnb_list #gnb_content li {
+  margin-bottom: 2rem;
+  font-size: 4rem;
+  width: 33rem;
+}
+
+@media (max-width: 420px) {
+  #menu header #gnb ul #gnb_list #gnb_content li {
+    font-size: 5rem;
+    width: 40rem;
+  }
 }
 
 #menu #gnb_list > a::after {
@@ -155,101 +164,5 @@ a {
   width: 500%;
   left: -200%;
   height: 2px;
-}
-
-/******************************______main______*********************************************/
-#this_page {
-  background-color: #686868;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  height: 100%;
-  margin: 0 3rem;
-}
-
-.main_title {
-  background-color: darksalmon;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 17%;
-}
-
-@media (max-width: 420px) {
-  .main_title {
-    height: 10%;
-  }
-}
-
-.main_left {
-  background-color: #659719;
-  display: flex;
-  align-items: center;
-  width: 50%;
-  height: 66%;
-}
-
-@media (max-width: 420px) {
-  .main_left {
-    width: 100%;
-    height: 40%;
-  }
-  .main_left .img {
-    margin: auto;
-  }
-}
-
-.main_left #text {
-  margin-left: 3rem;
-}
-
-.main_right {
-  background-color: #14a14b;
-  display: flex;
-  align-items: center;
-  width: 50%;
-  height: 66%;
-}
-
-@media (max-width: 420px) {
-  .main_right {
-    width: 100%;
-    height: 40%;
-  }
-  .main_right .img {
-    margin: auto;
-  }
-  .main_right #text {
-    margin-left: 3rem;
-  }
-}
-
-.main_bottom {
-  background-color: hotpink;
-  width: 100%;
-  height: 17%;
-}
-
-@media (max-width: 420px) {
-  .main_bottom {
-    height: 10%;
-  }
-}
-
-/********************************____footer____*****************************************/
-footer {
-  height: 150px;
-}
-
-footer img {
-  height: 100px;
-  width: 100px;
-}
-
-footer::before {
-  display: block;
-  content: "";
-  height: 2px;
-  background-color: #464646;
 }
 /*# sourceMappingURL=layout.css.map */
