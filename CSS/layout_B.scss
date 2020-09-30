@@ -7,7 +7,7 @@ $my_min_width : 420px;
 
 /*****************************______main_type_B______********************************************/
 .main_title_B {
-    background-color: darksalmon;
+    //background-color: darksalmon;
     display: flex;
     align-items: center;
     width: 100%;
@@ -23,7 +23,7 @@ $my_min_width : 420px;
 }
 
 .main_type_B {
-    background-color: rgb(142, 190, 199);
+    //background-color: rgb(142, 190, 199);
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -36,9 +36,11 @@ $my_min_width : 420px;
 }
 
 .main_left_B {
-    background-color: rgb(101, 151, 25);
+    //background-color: rgb(101, 151, 25);
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-end;
     right: 0;
     width: 50%;
     height: 63%;
@@ -59,9 +61,11 @@ $my_min_width : 420px;
 }
 
 .main_right_B {
-    background-color: rgb(20, 161, 75);
+    //background-color: rgb(20, 161, 75);
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
     width: 50%;
     height: 63%;
 
@@ -80,7 +84,7 @@ $my_min_width : 420px;
 }
 
 .main_bottom_B {
-    background-color: hotpink;
+    //background-color: hotpink;
     width: 100%;
     height: 10%;
 

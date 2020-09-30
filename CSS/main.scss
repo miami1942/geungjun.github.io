@@ -136,11 +136,6 @@ body {
         }
 
         .main_left_B {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: flex-start;
-            justify-content: flex-end;
-
             @media (max-width: $my_min_width) {
                 align-items: center;
                 justify-content: center;
@@ -163,11 +158,6 @@ body {
         }
 
         .main_right_B {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: flex-start;
-            justify-content: flex-start;
-
             #text {
                 position: relative;
                 color: $font_color;
@@ -194,10 +184,7 @@ body {
 
     #page4 {
         .main_left {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: space-around;
+            justify-content: center;
 
             @media (max-width: $my_min_width) {
                 height: 55%;
@@ -243,10 +230,7 @@ body {
         }
 
         .main_right {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: space-around;
+            justify-content: center;
 
             @media (max-width: $my_min_width) {
                 height: 30%;
@@ -327,9 +311,7 @@ body {
         }
 
         .main_bottom_C {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
+
 
             #line {
                 display: block;
@@ -363,18 +345,23 @@ body {
 
     #page6 {
         #page6_1 {
-
             .slide_sign {
                 position: absolute;
                 color: #ff3939;
                 font-weight: 700;
-                font-size: 35px;
-                right: 120px;
+                font-size: 5rem;
+                right: 15rem;
+
+                @media (max-width: $my_min_width) {
+                    top: 20rem;
+                }
             }
 
             .main_left {
+                justify-content: center;
+
                 #img {
-                    width: 350px;
+                    width: 90%;
                     height: auto;
                     border: 1px solid $main_color;
                 }
@@ -382,40 +369,59 @@ body {
                 #line {
                     position: absolute;
                     display: block;
-                    height: 400px;
+                    height: 60rem;
                     width: 3px;
                     left: 50%;
-                    transform: translate(0%, -5%);
+                    transform: translate(-50%, 0);
                     background-color: $main_color;
+
+                    @media (max-width: $my_min_width) {
+                        display: none;
+                    }
                 }
             }
 
             .main_right {
                 #text {
+                    position: relative;
+                    left: 2rem;
+                    width: 95%;
+
                     >li {
                         display: flex;
-                        margin-bottom: 15px;
+                        margin-bottom: 2rem;
+                    }
+
+                    ul {
+                        width: 100%;
                     }
 
                     #text_h {
-                        width: 150px;
+                        width: 20rem;
                         color: $main_color;
                         font-weight: 700;
-                        font-size: 27px;
+                        font-size: 3rem;
+
+                        @media (max-width: $my_min_width) {
+                            width: 25rem;
+                            font-size: 4rem;
+                        }
                     }
 
                     #text_b {
-                        width: 550px;
-                        height: auto;
+                        width: 90%;
                         color: $font_color;
                         font-weight: 700;
-                        font-size: 21px;
-                        color: $font_color;
+                        font-size: 2.5rem;
+
+                        @media (max-width: $my_min_width) {
+                            font-size: 3.2rem;
+                        }
                     }
 
                     #ul {
                         li {
-                            margin-bottom: 5px;
+                            margin-bottom: 1rem;
                         }
 
                         li::before {
@@ -428,27 +434,52 @@ body {
                     }
                 }
             }
+
+            .main_bottom {
+                #text_h {
+                    width: 20rem;
+                    color: $main_color;
+                    font-weight: 700;
+                    font-size: 3rem;
+                }
+
+                #text_b {
+                    width: 90%;
+                    color: $font_color;
+                    font-weight: 700;
+                    font-size: 2.5rem;
+                }
+            }
         }
 
         #page6_2 {
             .main_left {
                 ul {
+                    position: relative;
+                    left: 2rem;
+
                     #text_h {
-                        width: 150px;
+                        width: 20rem;
                         color: $main_color;
                         font-weight: 700;
-                        font-size: 27px;
-                        margin-bottom: 10px;
+                        font-size: 3rem;
+                        margin-bottom: 1rem;
+
+                        @media (max-width: $my_min_width) {
+                            font-size: 5rem;
+                        }
                     }
 
                     #text_b {
-                        width: 400px;
-                        height: auto;
+                        width: 90%;
                         color: $font_color;
                         font-weight: 700;
-                        font-size: 21px;
-                        color: $font_color;
-                        margin-bottom: 20px;
+                        font-size: 2.5rem;
+                        margin-bottom: 2rem;
+
+                        @media (max-width: $my_min_width) {
+                            font-size: 4rem;
+                        }
                     }
 
                     div {
@@ -466,47 +497,67 @@ body {
             }
 
             .main_right {
+                justify-content: center;
+
                 #text_h {
-                    width: 150px;
+                    width: 80%;
                     color: $main_color;
                     font-weight: 700;
-                    font-size: 27px;
+                    font-size: 3rem;
+                    margin-bottom: 1rem;
+
+                    @media (max-width: $my_min_width) {
+                        font-size: 5rem;
+                    }
                 }
 
                 #img {
-                    width: 500px;
+                    width: 80%;
                     height: auto;
-                    border: 1px solid $main_color;
+
+                    img {
+                        border: 1px solid $main_color;
+                    }
                 }
             }
         }
 
         #page6_3 {
             .main_left {
+                justify-content: center;
+
                 #img {
-                    align-items: center;
-                    width: 500px;
+                    width: 90%;
                     height: auto;
                     border: 1px solid $main_color;
                 }
+
             }
 
             .main_right {
                 ul {
                     #text_h {
-                        width: 150px;
+                        width: 30rem;
                         color: $main_color;
                         font-weight: 700;
-                        font-size: 27px;
+                        font-size: 3rem;
+                        margin-bottom: 1rem;
+
+                        @media (max-width: $my_min_width) {
+                            font-size: 5rem;
+                        }
                     }
 
                     #text_b {
-                        width: 450px;
-                        height: auto;
+                        width: 95%;
                         color: $font_color;
                         font-weight: 700;
-                        font-size: 21px;
-                        color: $font_color;
+                        font-size: 2.5rem;
+                        margin-bottom: 2rem;
+
+                        @media (max-width: $my_min_width) {
+                            font-size: 4rem;
+                        }
                     }
                 }
             }
@@ -514,36 +565,40 @@ body {
 
         #page6_4 {
             .main_left {
-                #text_h {
-                    width: 150px;
-                    color: $main_color;
-                    font-weight: 700;
-                    font-size: 27px;
-                }
+                justify-content: center;
 
                 #img {
-                    width: 500px;
+                    width: 90%;
                     height: auto;
                     border: 1px solid $main_color;
                 }
+
             }
 
             .main_right {
                 ul {
                     #text_h {
-                        width: 150px;
+                        width: 30rem;
                         color: $main_color;
                         font-weight: 700;
-                        font-size: 27px;
+                        font-size: 3rem;
+                        margin-bottom: 1rem;
+
+                        @media (max-width: $my_min_width) {
+                            font-size: 5rem;
+                        }
                     }
 
                     #text_b {
-                        width: 450px;
-                        height: auto;
+                        width: 95%;
                         color: $font_color;
                         font-weight: 700;
-                        font-size: 21px;
-                        color: $font_color;
+                        font-size: 2.5rem;
+                        margin-bottom: 2rem;
+
+                        @media (max-width: $my_min_width) {
+                            font-size: 4rem;
+                        }
                     }
                 }
             }
@@ -552,28 +607,46 @@ body {
         #page6_5 {
             .main_up_D {
                 #img {
-                    width: 350px;
-                    height: 160px;
+                    width: 35%;
+                    height: auto;
                     border: 1px solid $main_color;
+
+                    @media (max-width: $my_min_width) {
+                        width: 90%;
+                    }
                 }
             }
 
             .main_down_D {
+                justify-content: left;
+
                 ul {
+                    position: relative;
+                    margin: 2rem;
+                    width: 100%;
+
                     #text_h {
-                        width: 150px;
+                        width: 30rem;
                         color: $main_color;
                         font-weight: 700;
-                        font-size: 27px;
+                        font-size: 3rem;
+                        margin-bottom: 1rem;
+
+                        @media (max-width: $my_min_width) {
+                            font-size: 5rem;
+                        }
                     }
 
                     #text_b {
-                        width: 1100px;
-                        height: auto;
+                        width: 95%;
                         color: $font_color;
                         font-weight: 700;
-                        font-size: 21px;
-                        color: $font_color;
+                        font-size: 2.5rem;
+                        margin-bottom: 2rem;
+
+                        @media (max-width: $my_min_width) {
+                            font-size: 4rem;
+                        }
                     }
                 }
             }
