@@ -1,18 +1,9 @@
 $header_color: #000000;
-$main_color: rgb(11, 83, 149);
+$main_color : rgb(11, 83, 149);
 //$main_color : rgb(0, 174, 255);
-$font_color: #000000;
-$menu_color: #ffffff;
-$my_min_width: 420px;
-
-html {
-    font-size: 1vmin; //min으로 하니깐 잘 맞는다
-}
-
-img {
-    width: 100%;
-    height: 100%;
-}
+$font_color : #000000;
+$menu_color : #ffffff;
+$my_min_width : 420px;
 
 #menu {
     header {
@@ -28,10 +19,6 @@ img {
     header::after {
         background-color: $main_color;
     }
-}
-
-body {
-    font-size: 0px;
 }
 
 #fullpage {
@@ -312,7 +299,7 @@ body {
             .main_right {
                 #text {
                     position: relative;
-                    margin: 0rem 2rem;
+                    margin: 0rem 3rem;
                     width: 95%;
 
                     >li {
@@ -344,13 +331,19 @@ body {
 
                     @media (max-width: $my_min_width) {
                         #text_h {
-                            width: 30rem;
+                            width: 25rem;
+                            font-size: 3rem;
+                        }
+
+                        #text_b {
+                            font-size: 3rem;
                         }
                     }
                 }
             }
         }
 
+        /*
         #page6_2 {
             .main_left {
                 ul {
@@ -397,6 +390,7 @@ body {
                 }
             }
         }
+        */
 
         #page6_3 {
             .main_left {
@@ -431,7 +425,7 @@ body {
                 justify-content: center;
 
                 #img {
-                    width: 90%;
+                    width: 40%;
                     height: auto;
                     border: 1px solid $main_color;
                 }
@@ -455,6 +449,160 @@ body {
 
             .main_down_D {
                 justify-content: left;
+
+                #text {
+                    margin: 0 3rem;
+
+                    @media (max-width: $my_min_width) {
+                        #text_b {
+                            font-size: 4rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #page7 {
+        #page7_1 {
+            .main_left {
+                justify-content: center;
+
+                #img {
+                    width: 90%;
+                    height: auto;
+                    border: 1px solid $main_color;
+                }
+
+                #line {
+                    position: absolute;
+                    display: block;
+                    height: 60rem;
+                    width: 3px;
+                    left: 50%;
+                    transform: translate(-50%, 0);
+                    background-color: $main_color;
+
+                    @media (max-width: $my_min_width) {
+                        display: none;
+                    }
+                }
+            }
+
+            .main_right {
+                #text {
+                    position: relative;
+                    margin: 0rem 3rem;
+                    width: 95%;
+
+                    >li {
+                        display: flex;
+                        margin-bottom: 2rem;
+                    }
+
+                    ul {
+                        width: 100%;
+                    }
+
+                    #text_h {
+                        width: 21rem;
+                    }
+
+                    #text_b {
+                        width: 100%;
+                    }
+
+                    #ul {
+                        li::before {
+                            color: $main_color;
+                            content: "\2022"; //원모양 CSS Code/unicode
+                            font-weight: bold;
+                            display: inline-block;
+                            width: 0.8em;
+                        }
+                    }
+
+                    @media (max-width: $my_min_width) {
+                        #text_h {
+                            width: 25rem;
+                            font-size: 3rem;
+                        }
+
+                        #text_b {
+                            font-size: 3rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        #page7_2 {
+            .main_left {
+                justify-content: center;
+
+                #img {
+                    width: 90%;
+                    height: auto;
+                    border: 1px solid $main_color;
+                }
+            }
+
+            .main_right {}
+        }
+
+        #page7_3 {
+            .main_left {
+                justify-content: center;
+
+                #img {
+                    width: 90%;
+                    height: auto;
+                    border: 1px solid $main_color;
+                }
+            }
+
+            .main_right {}
+        }
+
+        #page7_4 {
+            .main_left {
+                justify-content: center;
+
+                #img {
+                    width: 50%;
+                    height: auto;
+                    border: 1px solid $main_color;
+                }
+            }
+
+            .main_right {}
+        }
+
+        #page7_5 {
+            .main_up_D {
+                #img {
+                    width: 35%;
+                    height: auto;
+                    border: 1px solid $main_color;
+
+                    @media (max-width: $my_min_width) {
+                        width: 90%;
+                    }
+                }
+            }
+
+            .main_down_D {
+                justify-content: left;
+
+                #text {
+                    margin: 0 3rem;
+
+                    @media (max-width: $my_min_width) {
+                        #text_b {
+                            font-size: 4rem;
+                        }
+                    }
+                }
             }
         }
     }

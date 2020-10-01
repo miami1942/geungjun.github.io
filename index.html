@@ -11,7 +11,7 @@
   <!--scss-->
   <!--높이 가변 메뉴-->
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="/CSS/default.css">
   <link rel="stylesheet" href="/CSS/fullpage.css">
   <link rel="stylesheet" href="/CSS/swiper-bundle.css">
   <link rel="stylesheet" href="/CSS/layout.css">
@@ -28,7 +28,7 @@
   <script defer src="/JS/main.js"></script>
 </head>
 
-<body>
+<body class="no-drag">
   <div id="menu">
     <!--<a href="javascript:void(0);"> 페이지 이동 막기-->
     <div id="expand_header">
@@ -102,21 +102,17 @@
             </li>
             <li>
               <div id="num">02</div>
-              <div>&nbsp;프로젝트</div>
-              <div id="content"> - OWGG</div>
+              <div>&nbsp;기술력</div>
             </li>
             <li>
               <div id="num">03</div>
               <div>&nbsp;프로젝트</div>
+              <div id="content"> - PortFolio</div>
               <div id="content"> - Holiday Calendar</div>
+              <div id="content"> - OWGG</div>
             </li>
             <li>
               <div id="num">04</div>
-              <div>&nbsp;프로젝트</div>
-              <div id="content"> - skyrim roadmap</div>
-            </li>
-            <li>
-              <div id="num">05</div>
               <div>&nbsp;블로그 소개</div>
               <div id="content"></div>
             </li>
@@ -236,7 +232,7 @@
     <div id="page5" class="section">
       <div id="this_page">
         <div class="main_title_C">
-          01 자기소개 - 기술력
+          02 기술력
         </div>
         <div class="main_middle_C">
           <div id="line">
@@ -265,7 +261,7 @@
         <div id="page6_1" class="swiper-slide">
           <div id="this_page">
             <div class="main_title_B">
-              02 프로젝트 - PortFolio
+              03 프로젝트 - PortFolio
               <div class="slide_sign">&lt;&lt;&lt;&nbsp;Slide</div>
             </div>
             <div class="main_left">
@@ -310,6 +306,7 @@
             </div>
           </div>
         </div>
+        <!--
         <div id="page6_2" class="swiper-slide">
           <div id="this_page">
             <div class="main_title_B">
@@ -338,10 +335,11 @@
             </div>
           </div>
         </div>
+      -->
         <div id="page6_3" class="swiper-slide">
           <div id="this_page">
             <div class="main_title_B">
-              02 프로젝트 - PortFolio
+              03 프로젝트 - PortFolio
             </div>
             <div class="main_left">
               <div id="img">
@@ -355,6 +353,7 @@
                   <li id="text_b">fullpage</li>
                   <li id="text_b">swiper</li>
                 </ul>
+                <div class="enter_block"></div>
                 <li id="text_h">화면설명:</li>
                 <div id="text_b">fullpage와 swiper를 사용하여 화면을 부드럽게 좌우로 움직일수 있게 해주었다.
                   <br> 또한 페이지별로 버튼을 만들어 원하는 페이지로 이동할 수 있다
@@ -369,7 +368,7 @@
         <div id="page6_4" class="swiper-slide">
           <div id="this_page">
             <div class="main_title_B">
-              02 프로젝트 - PortFolio
+              03 프로젝트 - PortFolio
             </div>
             <div class="main_left">
               <div id="img">
@@ -385,6 +384,7 @@
                   <li id="text_b">jquery</li>
                   <li id="text_b">css transform</li>
                 </ul>
+                <div class="enter_block"></div>
                 <li id="text_h">화면설명:</li>
                 <div id="text_b">자바스크립트, jquery를 사용하여 버튼이벤트를 주었고 버튼이 클릭될 때마다
                   화면이 내려옴과 동시에 x자로 바뀌게 하였음, 메뉴창은 내용에 따라 높이가 변하는 가변메뉴로 제작
@@ -399,11 +399,11 @@
         <div id="page6_5" class="swiper-slide">
           <div id="this_page">
             <div class="main_title_B">
-              02 프로젝트 - PortFolio
+              03 프로젝트 - PortFolio
             </div>
             <div class="main_left">
               <div id="img">
-                <img src="/img/project_PortFolio/Portfolio02.png" alt="">
+                <img src="/img/project_PortFolio/Portfolio03.png" alt="">
               </div>
               <div id="line"></div>
             </div>
@@ -413,6 +413,7 @@
                 <ul>
                   <li id="text_b">반응형 웹</li>
                 </ul>
+                <div class="enter_block"></div>
                 <li id="text_h">화면설명:</li>
                 <div id="text_b">
                   가로 420px(최대 모바일 기준)을 넘으면 모바일 화면으로 전환된다,
@@ -428,7 +429,7 @@
         <div id="page6_6" class="swiper-slide">
           <div id="this_page">
             <div class="main_title_B">
-              02 프로젝트 - PortFolio
+              03 프로젝트 - PortFolio
             </div>
             <div class="main_up_D">
               <div id="img">
@@ -437,9 +438,187 @@
               <div id="line"></div>
             </div>
             <div class="main_down_D">
-              <ul>
+              <ul id="text">
                 <li id="text_h">참여소감:</li>
-                <div id="text_b">음..아직 작성 안함</div>
+                <div id="text_b">
+                  이 프로젝트는 상시 서비스를 해주는 gitpage를 사용하여 어떤 상황이던 제 포트폴리오를 볼 수 있도록 작성하였습니다.
+                  처음에는 일반적인 화면으로 만들다가 화면의 배율의 크기에 따라 레이아웃이 어긋나는 것을 발견하였고 어떻게 해야 하나 고민하였습니다.
+                  그 뒤 flex, %, rem @media를 사용하여 모바일, 배율크기에 상관없이 볼 수 있도록 다듬으면서 반응형 웹에 대한 기본 지식을 익혔습니다.
+                </div>
+              </ul>
+            </div>
+            <div class="main_bottom">
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="swiper_option">
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+    <div id="page7" class="section swiper-container">
+      <div class="swiper-wrapper">
+        <div id="page7_1" class="swiper-slide">
+          <div id="this_page">
+            <div class="main_title_B">
+              03 프로젝트 - Holiday Calendar
+            </div>
+            <div class="main_left">
+              <div id="img">
+                <img src="/img/project_Holiday_calendar/Portfolio00.png" alt="">
+              </div>
+              <div id="line"></div>
+            </div>
+            <div class="main_right">
+              <ul id="text">
+                <li>
+                  <div id="text_h">프로젝트명</div>
+                  <div id="text_b">Holiday Calendar</div>
+                </li>
+                <li>
+                  <div id="text_h">수행 기간</div>
+                  <div id="text_b">2020.09.22 ~ 2020.09.29(총8일)</div>
+                </li>
+                <li>
+                  <div id="text_h">개발 목표</div>
+                  <div id="text_b">매년 공휴일을 알아봄과 동시에, API의 활용능력을 키우기 위함</div>
+                </li>
+                <li>
+                  <div id="text_h">개발 환경</div>
+                  <div id="text_b">공공데이터포탈오픈API, VScode, Window10, xml, github, gitpage, HTML, CSS, SASS, javascript,
+                    jquery</div>
+                </li>
+                <li>
+                  <div id="text_h">구현 기능</div>
+                  <ul id="ul">
+                    <li id="text_b">date()값으로 자동 계산하는 달력</li>
+                    <li id="text_b">공공API를 활용한 데이터 파싱</li>
+                    <li id="text_b">받아온 데이터를 javascript를 사용하여 계산</li>
+                    <li id="text_b">sass(scss)를 활용하여 화면 가독성 증가</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="main_bottom">
+
+            </div>
+          </div>
+        </div>
+        <div id="page7_2" class="swiper-slide">
+          <div id="this_page">
+            <div class="main_title_B">
+              03 프로젝트 - Holiday Calendar
+            </div>
+            <div class="main_left">
+              <div id="img">
+                <img src="/img/project_Holiday_calendar/Portfolio01.PNG" alt="">
+              </div>
+            </div>
+            <div class="main_right">
+              <ul>
+                <li id="text_h">구현기능:</li>
+                <ul>
+                  <li id="text_b">공공 데이터 포탈 오픈 API</li>
+                  <li id="text_b">xml 파싱</li>
+                </ul>
+                <div class="enter_block"></div>
+                <li id="text_h">화면설명:</li>
+                <div id="text_b">공공 데이터 포탈 오픈 API를 사용하여 대한민국에서 정한 공휴일 정보를 받아온다.
+                  <br> 받아온 xml 데이터를 파싱하여 화면에 뿌려준다.
+                </div>
+              </ul>
+            </div>
+            <div class="main_bottom">
+
+            </div>
+          </div>
+        </div>
+        <div id="page7_3" class="swiper-slide">
+          <div id="this_page">
+            <div class="main_title_B">
+              03 프로젝트 - Holiday Calendar
+            </div>
+            <div class="main_left">
+              <div id="img">
+                <img src="/img/project_Holiday_calendar/Portfolio02.png" alt="">
+              </div>
+              <div id="line"></div>
+            </div>
+            <div class="main_right">
+              <ul>
+                <li id="text_h">구현기능:</li>
+                <ul>
+                  <li id="text_b">javascript</li>
+                  <li id="text_b">jquery</li>
+                  <li id="text_b">new Date()</li>
+                </ul>
+                <div class="enter_block"></div>
+                <li id="text_h">화면설명:</li>
+                <div id="text_b">
+                  new Date()를 사용하여 원하는 시간을 계산하여 화면에 달력 형식으로 출력하게 하였다.<br>
+                  데이터포탈 서버에서 xml데이터로 전달해 준 공공데이터 공휴일들을 파싱하여 배열에 저장 후,
+                  자바스크립트와 jquery를 사용하여 화면에 출력한 달력의 데이터와 비교하여 공휴일에 붉은 배경을 주었다.
+                </div>
+              </ul>
+            </div>
+            <div class="main_bottom">
+
+            </div>
+          </div>
+        </div>
+        <div id="page7_4" class="swiper-slide">
+          <div id="this_page">
+            <div class="main_title_B">
+              03 프로젝트 - Holiday Calendar
+            </div>
+            <div class="main_left">
+              <div id="img">
+                <img src="/img/project_Holiday_calendar/Portfolio03.png" alt="">
+              </div>
+              <div id="line"></div>
+            </div>
+            <div class="main_right">
+              <ul>
+                <li id="text_h">구현기능:</li>
+                <ul>
+                  <li id="text_b">공공데이터 API</li>
+                  <li id="text_b">jQuery</li>
+                </ul>
+                <div class="enter_block"></div>
+                <li id="text_h">화면설명:</li>
+                <div id="text_b">
+                  공공데이터로 받아온 공휴일들의 갯수와 일요일의 겹침 여부를 계산하여 화면에 출력해준다.<br>
+                  그 해의 일요일만 계산할 수도 있고 일요일을 제외한 날에 있는 공휴일들을 계산할 수 도 있다.
+                </div>
+              </ul>
+            </div>
+            <div class="main_bottom">
+
+            </div>
+          </div>
+        </div>
+        <div id="page7_5" class="swiper-slide">
+          <div id="this_page">
+            <div class="main_title_B">
+              03 프로젝트 - Holiday Calendar
+            </div>
+            <div class="main_up_D">
+              <div id="img">
+                <img src="/img/project_Holiday_calendar/Portfolio00.png" alt="">
+              </div>
+              <div id="line"></div>
+            </div>
+            <div class="main_down_D">
+              <ul id="text">
+                <li id="text_h">참여소감:</li>
+                <div id="text_b">공공데이터 API를 받아오는것을 중점으로 프로젝트를 진행하였습니다.
+                  서버에서 받은 xml을 파싱하는 과정에서 Cross-Origin Resource Sharing정책에 관한 것을 알게되었습니다.
+                  CORS에 의해 다른출처의 리소스는 브라우저가 파기하기 때문에 직접 서버를 만들어 서버에서 받았어야 했습니다. 
+                  그러나 이것은 개인서버가 아니라 github 서버이기 때문에 브라우저에 예외조항을 두고 실행하는 방법을 사용하였습니다. 
+                </div>
               </ul>
             </div>
             <div class="main_bottom">
