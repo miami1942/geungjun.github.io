@@ -53,6 +53,7 @@ body {
 }
 
 #fullpage #page2 .main_left #text {
+  width: 100%;
   color: #000000;
   font-weight: 700;
   font-size: 4.5rem;
@@ -71,7 +72,7 @@ body {
 }
 
 #fullpage #page2 .main_left #text li #content {
-  width: 50rem;
+  width: 100%;
 }
 
 #fullpage #page2 .main_right .img {
@@ -88,12 +89,12 @@ body {
   transform: rotate(-5deg);
   transform: translate(-50%, -50%);
   font-size: 7rem;
-  font-family: 'Nanum Pen Script', cursive;
+  font-family: "Nanum Pen Script", cursive;
 }
 
 @media (max-width: 420px) {
   #fullpage #page2 .main_right .img div {
-    width: 55rem;
+    width: 56rem;
     font-size: 9rem;
   }
 }
@@ -149,7 +150,7 @@ body {
   font-weight: 700;
   font-size: 3rem;
   top: 3rem;
-  left: 3rem;
+  margin: 3rem;
 }
 
 @media (max-width: 420px) {
@@ -175,6 +176,10 @@ body {
   #fullpage #page4 .main_left {
     height: 55%;
   }
+}
+
+#fullpage #page4 .main_left #text {
+  margin: 2rem;
 }
 
 #fullpage #page4 .main_left #text #text_h {
@@ -227,6 +232,10 @@ body {
   #fullpage #page4 .main_right {
     height: 30%;
   }
+}
+
+#fullpage #page4 .main_right #text {
+  margin: 2rem;
 }
 
 #fullpage #page4 .main_right #text #text_h {
@@ -329,8 +338,8 @@ body {
   position: absolute;
   color: #ff3939;
   font-weight: 700;
-  font-size: 5rem;
-  right: 15rem;
+  font-size: 10rem;
+  right: 0rem;
 }
 
 @media (max-width: 420px) {
@@ -367,7 +376,7 @@ body {
 
 #fullpage #page6 #page6_1 .main_right #text {
   position: relative;
-  left: 2rem;
+  margin: 0rem 2rem;
   width: 95%;
 }
 
@@ -381,7 +390,7 @@ body {
 }
 
 #fullpage #page6 #page6_1 .main_right #text #text_h {
-  width: 20rem;
+  width: 21rem;
   color: #0b5395;
   font-weight: 700;
   font-size: 3rem;
@@ -389,13 +398,13 @@ body {
 
 @media (max-width: 420px) {
   #fullpage #page6 #page6_1 .main_right #text #text_h {
-    width: 25rem;
+    width: 27rem;
     font-size: 4rem;
   }
 }
 
 #fullpage #page6 #page6_1 .main_right #text #text_b {
-  width: 90%;
+  width: 100%;
   color: #000000;
   font-weight: 700;
   font-size: 2.5rem;
@@ -405,10 +414,6 @@ body {
   #fullpage #page6 #page6_1 .main_right #text #text_b {
     font-size: 3.2rem;
   }
-}
-
-#fullpage #page6 #page6_1 .main_right #text #ul li {
-  margin-bottom: 1rem;
 }
 
 #fullpage #page6 #page6_1 .main_right #text #ul li::before {

@@ -15,7 +15,11 @@ function slide() {
             }, 700, function () {
                 $(this).animate({
                     marginRight: "0px",
-                }, 700)
+                }, 700, function () {
+                    setTimeout(function () {
+                        $(".slide_sign").fadeOut(1000)
+                    }, 4000);
+                })
             })
         })
     })

@@ -1,9 +1,9 @@
 $header_color: #000000;
-$main_color : rgb(11, 83, 149);
+$main_color: rgb(11, 83, 149);
 //$main_color : rgb(0, 174, 255);
-$font_color : #000000;
-$menu_color : #ffffff;
-$my_min_width : 420px;
+$font_color: #000000;
+$menu_color: #ffffff;
+$my_min_width: 420px;
 
 html {
     font-size: 1vmin; //min으로 하니깐 잘 맞는다
@@ -66,6 +66,7 @@ body {
     #page2 {
         .main_left {
             #text {
+                width: 100%;
                 color: $font_color;
                 font-weight: 700;
                 font-size: 4.5rem;
@@ -80,7 +81,7 @@ body {
                     margin-top: 1rem;
 
                     #content {
-                        width: 50rem;
+                        width: 100%;
                     }
                 }
             }
@@ -100,10 +101,10 @@ body {
                     transform: rotate(-5deg);
                     transform: translate(-50%, -50%); //rotate위에 있으면 에러뜸
                     font-size: 7rem;
-                    font-family: 'Nanum Pen Script', cursive;
+                    font-family: "Nanum Pen Script", cursive;
 
                     @media (max-width: $my_min_width) {
-                        width: 55rem;
+                        width: 56rem;
                         font-size: 9rem;
                     }
                 }
@@ -164,7 +165,7 @@ body {
                 font-weight: 700;
                 font-size: 3rem;
                 top: 3rem;
-                left: 3rem;
+                margin: 3rem;
 
                 @media (max-width: $my_min_width) {
                     font-size: 5rem;
@@ -191,6 +192,8 @@ body {
             }
 
             #text {
+                margin: 2rem;
+
                 #text_h {
                     color: $main_color;
                     font-weight: 700;
@@ -237,6 +240,7 @@ body {
             }
 
             #text {
+                margin: 2rem;
 
                 #text_h {
                     color: $main_color;
@@ -311,8 +315,6 @@ body {
         }
 
         .main_bottom_C {
-
-
             #line {
                 display: block;
                 height: 3px;
@@ -349,8 +351,8 @@ body {
                 position: absolute;
                 color: #ff3939;
                 font-weight: 700;
-                font-size: 5rem;
-                right: 15rem;
+                font-size: 10rem;
+                right: 0rem;
 
                 @media (max-width: $my_min_width) {
                     top: 20rem;
@@ -384,7 +386,7 @@ body {
             .main_right {
                 #text {
                     position: relative;
-                    left: 2rem;
+                    margin: 0rem 2rem;
                     width: 95%;
 
                     >li {
@@ -397,19 +399,19 @@ body {
                     }
 
                     #text_h {
-                        width: 20rem;
+                        width: 21rem;
                         color: $main_color;
                         font-weight: 700;
                         font-size: 3rem;
 
                         @media (max-width: $my_min_width) {
-                            width: 25rem;
+                            width: 27rem;
                             font-size: 4rem;
                         }
                     }
 
                     #text_b {
-                        width: 90%;
+                        width: 100%;
                         color: $font_color;
                         font-weight: 700;
                         font-size: 2.5rem;
@@ -420,10 +422,6 @@ body {
                     }
 
                     #ul {
-                        li {
-                            margin-bottom: 1rem;
-                        }
-
                         li::before {
                             color: $main_color;
                             content: "\2022"; //원모양 CSS Code/unicode
@@ -531,7 +529,6 @@ body {
                     height: auto;
                     border: 1px solid $main_color;
                 }
-
             }
 
             .main_right {
@@ -572,7 +569,6 @@ body {
                     height: auto;
                     border: 1px solid $main_color;
                 }
-
             }
 
             .main_right {
@@ -653,7 +649,6 @@ body {
         }
     }
 }
-
 
 //풀페이지,오버로드
 #fp-nav ul li a span,
