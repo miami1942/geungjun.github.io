@@ -1,0 +1,34 @@
+$header_color: #000000;
+$main_color: rgb(11, 83, 149);
+//$main_color : rgb(0, 174, 255);
+$font_color: #000000;
+$menu_color: #ffffff;
+$my_min_width: 420px;
+
+html {
+    font-size: 1vmin; //min으로 하니깐 잘 맞는다
+}
+
+#fullpage {
+    #text_h {
+        color: $main_color;
+        font-weight: 700;
+        font-size: 3rem;
+        margin-right: 1.5rem;
+
+        @media (max-width: $my_min_width) {
+            font-size: 5rem;
+        }
+    }
+
+    #text_b {
+        color: $font_color;
+        font-weight: 700;
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+
+        @media (max-width: $my_min_width) {
+            font-size: 5rem;
+        }
+    }
+}

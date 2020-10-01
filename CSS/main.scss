@@ -116,14 +116,7 @@ body {
         .main_type_B {
             #text {
                 #text_h {
-                    color: $main_color;
-                    font-weight: 700;
-                    font-size: 4rem;
                     text-align: center;
-
-                    @media (max-width: $my_min_width) {
-                        font-size: 5rem;
-                    }
                 }
 
                 #line {
@@ -161,60 +154,22 @@ body {
         .main_right_B {
             #text {
                 position: relative;
-                color: $font_color;
-                font-weight: 700;
-                font-size: 3rem;
                 top: 3rem;
                 margin: 3rem;
 
-                @media (max-width: $my_min_width) {
-                    font-size: 5rem;
-                }
-
                 li {
                     margin-top: 2rem;
-                }
-
-                #text_h {
-                    margin-right: 1rem;
-                    color: $main_color;
                 }
             }
         }
     }
 
     #page4 {
-        .main_left {
-            justify-content: center;
-
-            @media (max-width: $my_min_width) {
-                height: 55%;
-            }
+        .main_middle_C {
+            justify-content: space-around;
 
             #text {
                 margin: 0rem 2rem;
-
-                #text_h {
-                    color: $main_color;
-                    font-weight: 700;
-                    font-size: 4rem;
-
-                    @media (max-width: $my_min_width) {
-                        font-size: 6rem;
-                    }
-                }
-
-                #text_b {
-                    color: $font_color;
-                    font-weight: 700;
-                    font-size: 3rem;
-                    margin-bottom: 1rem;
-                    color: $font_color;
-
-                    @media (max-width: $my_min_width) {
-                        font-size: 5rem;
-                    }
-                }
             }
 
             #line {
@@ -230,39 +185,10 @@ body {
                     display: none;
                 }
             }
-        }
-
-        .main_right {
-            justify-content: center;
 
             @media (max-width: $my_min_width) {
-                height: 30%;
-            }
-
-            #text {
-                margin: 2rem;
-
-                #text_h {
-                    color: $main_color;
-                    font-weight: 700;
-                    font-size: 4rem;
-
-                    @media (max-width: $my_min_width) {
-                        font-size: 6rem;
-                    }
-                }
-
-                #text_b {
-                    color: $font_color;
-                    font-weight: 700;
-                    font-size: 3rem;
-                    margin-bottom: 1rem;
-                    color: $font_color;
-
-                    @media (max-width: $my_min_width) {
-                        font-size: 5rem;
-                    }
-                }
+                justify-content: left;
+                height: 85%;
             }
         }
 
@@ -400,25 +326,10 @@ body {
 
                     #text_h {
                         width: 21rem;
-                        color: $main_color;
-                        font-weight: 700;
-                        font-size: 3rem;
-
-                        @media (max-width: $my_min_width) {
-                            width: 27rem;
-                            font-size: 4rem;
-                        }
                     }
 
                     #text_b {
                         width: 100%;
-                        color: $font_color;
-                        font-weight: 700;
-                        font-size: 2.5rem;
-
-                        @media (max-width: $my_min_width) {
-                            font-size: 3.2rem;
-                        }
                     }
 
                     #ul {
@@ -430,22 +341,12 @@ body {
                             width: 0.8em;
                         }
                     }
-                }
-            }
 
-            .main_bottom {
-                #text_h {
-                    width: 20rem;
-                    color: $main_color;
-                    font-weight: 700;
-                    font-size: 3rem;
-                }
-
-                #text_b {
-                    width: 90%;
-                    color: $font_color;
-                    font-weight: 700;
-                    font-size: 2.5rem;
+                    @media (max-width: $my_min_width) {
+                        #text_h {
+                            width: 30rem;
+                        }
+                    }
                 }
             }
         }
@@ -458,26 +359,10 @@ body {
 
                     #text_h {
                         width: 20rem;
-                        color: $main_color;
-                        font-weight: 700;
-                        font-size: 3rem;
-                        margin-bottom: 1rem;
-
-                        @media (max-width: $my_min_width) {
-                            font-size: 5rem;
-                        }
                     }
 
                     #text_b {
                         width: 90%;
-                        color: $font_color;
-                        font-weight: 700;
-                        font-size: 2.5rem;
-                        margin-bottom: 2rem;
-
-                        @media (max-width: $my_min_width) {
-                            font-size: 4rem;
-                        }
                     }
 
                     div {
@@ -499,14 +384,7 @@ body {
 
                 #text_h {
                     width: 80%;
-                    color: $main_color;
-                    font-weight: 700;
-                    font-size: 3rem;
                     margin-bottom: 1rem;
-
-                    @media (max-width: $my_min_width) {
-                        font-size: 5rem;
-                    }
                 }
 
                 #img {
@@ -531,33 +409,7 @@ body {
                 }
             }
 
-            .main_right {
-                ul {
-                    #text_h {
-                        width: 30rem;
-                        color: $main_color;
-                        font-weight: 700;
-                        font-size: 3rem;
-                        margin-bottom: 1rem;
-
-                        @media (max-width: $my_min_width) {
-                            font-size: 5rem;
-                        }
-                    }
-
-                    #text_b {
-                        width: 95%;
-                        color: $font_color;
-                        font-weight: 700;
-                        font-size: 2.5rem;
-                        margin-bottom: 2rem;
-
-                        @media (max-width: $my_min_width) {
-                            font-size: 4rem;
-                        }
-                    }
-                }
-            }
+            .main_right {}
         }
 
         #page6_4 {
@@ -571,36 +423,24 @@ body {
                 }
             }
 
-            .main_right {
-                ul {
-                    #text_h {
-                        width: 30rem;
-                        color: $main_color;
-                        font-weight: 700;
-                        font-size: 3rem;
-                        margin-bottom: 1rem;
-
-                        @media (max-width: $my_min_width) {
-                            font-size: 5rem;
-                        }
-                    }
-
-                    #text_b {
-                        width: 95%;
-                        color: $font_color;
-                        font-weight: 700;
-                        font-size: 2.5rem;
-                        margin-bottom: 2rem;
-
-                        @media (max-width: $my_min_width) {
-                            font-size: 4rem;
-                        }
-                    }
-                }
-            }
+            .main_right {}
         }
 
         #page6_5 {
+            .main_left {
+                justify-content: center;
+
+                #img {
+                    width: 90%;
+                    height: auto;
+                    border: 1px solid $main_color;
+                }
+            }
+
+            .main_right {}
+        }
+
+        #page6_6 {
             .main_up_D {
                 #img {
                     width: 35%;
@@ -615,36 +455,6 @@ body {
 
             .main_down_D {
                 justify-content: left;
-
-                ul {
-                    position: relative;
-                    margin: 2rem;
-                    width: 100%;
-
-                    #text_h {
-                        width: 30rem;
-                        color: $main_color;
-                        font-weight: 700;
-                        font-size: 3rem;
-                        margin-bottom: 1rem;
-
-                        @media (max-width: $my_min_width) {
-                            font-size: 5rem;
-                        }
-                    }
-
-                    #text_b {
-                        width: 95%;
-                        color: $font_color;
-                        font-weight: 700;
-                        font-size: 2.5rem;
-                        margin-bottom: 2rem;
-
-                        @media (max-width: $my_min_width) {
-                            font-size: 4rem;
-                        }
-                    }
-                }
             }
         }
     }

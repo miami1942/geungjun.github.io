@@ -1,0 +1,30 @@
+html {
+  font-size: 1vmin;
+}
+
+#fullpage #text_h {
+  color: #0b5395;
+  font-weight: 700;
+  font-size: 3rem;
+  margin-right: 1.5rem;
+}
+
+@media (max-width: 420px) {
+  #fullpage #text_h {
+    font-size: 5rem;
+  }
+}
+
+#fullpage #text_b {
+  color: #000000;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 420px) {
+  #fullpage #text_b {
+    font-size: 5rem;
+  }
+}
+/*# sourceMappingURL=font.css.map */
