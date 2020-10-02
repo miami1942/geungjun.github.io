@@ -606,6 +606,169 @@ $my_min_width : 420px;
             }
         }
     }
+
+    #page8 {
+        #page8_1 {
+            .main_left {
+                justify-content: center;
+
+                #img {
+                    width: 90%;
+                    height: auto;
+                    border: 1px solid $main_color;
+                }
+
+                #line {
+                    position: absolute;
+                    display: block;
+                    height: 60rem;
+                    width: 3px;
+                    left: 50%;
+                    transform: translate(-50%, 0);
+                    background-color: $main_color;
+
+                    @media (max-width: $my_min_width) {
+                        display: none;
+                    }
+                }
+            }
+
+            .main_right {
+                #text {
+                    position: relative;
+                    margin: 0rem 3rem;
+                    width: 95%;
+
+                    >li {
+                        display: flex;
+                        margin-bottom: 2rem;
+                    }
+
+                    ul {
+                        width: 100%;
+                    }
+
+                    #text_h {
+                        width: 21rem;
+                    }
+
+                    #text_b {
+                        width: 100%;
+                    }
+
+                    #ul {
+                        li::before {
+                            color: $main_color;
+                            content: "\2022"; //원모양 CSS Code/unicode
+                            font-weight: bold;
+                            display: inline-block;
+                            width: 0.8em;
+                        }
+                    }
+
+                    @media (max-width: $my_min_width) {
+                        #text_h {
+                            width: 25rem;
+                            font-size: 3rem;
+                        }
+
+                        #text_b {
+                            font-size: 3rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        #page8_2 {
+            .main_left {
+                justify-content: center;
+
+                #img {
+                    width: 90%;
+                    height: auto;
+                    border: 1px solid $main_color;
+                }
+            }
+
+            .main_right {}
+        }
+
+        #page8_3 {
+            .main_left {
+                justify-content: center;
+
+                #img {
+                    width: 90%;
+                    height: auto;
+                    border: 1px solid $main_color;
+                }
+            }
+
+            .main_right {}
+        }
+
+        #page8_4 {
+            .main_left {
+                justify-content: center;
+
+                #img {
+                    width: 70%;
+                    height: auto;
+                    border: 1px solid $main_color;
+                }
+            }
+
+            .main_right {}
+        }
+
+        #page8_5 {
+            .main_up_D {
+                #img {
+                    width: 35%;
+                    height: auto;
+                    border: 1px solid $main_color;
+
+                    @media (max-width: $my_min_width) {
+                        width: 90%;
+                    }
+                }
+            }
+
+            .main_down_D {
+                justify-content: left;
+
+                #text {
+                    margin: 0 3rem;
+
+                    @media (max-width: $my_min_width) {
+                        #text_b {
+                            font-size: 4rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #go_up {
+        img {
+            height: 15rem;
+            width: 15rem;
+        }
+    
+        #text {
+            font-size: 3rem;
+            margin-left: 3rem;
+        }
+    }
+    
+    #footer {
+        #text {
+            font-size: 2rem;
+            margin: 1rem;
+        }
+    }
 }
 
 //풀페이지,오버로드

@@ -85,18 +85,33 @@
 }
 
 /********************************____footer____*****************************************/
-footer {
-  height: 150px;
+#go_up {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 20rem;
 }
 
-footer img {
-  height: 100px;
-  width: 100px;
+#footer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
-footer::before {
+#go_up::before {
   display: block;
   content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #464646;
+}
+
+#footer::before {
+  display: block;
+  content: "";
+  width: 100%;
   height: 2px;
   background-color: #464646;
 }
