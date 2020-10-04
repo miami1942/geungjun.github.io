@@ -87,8 +87,6 @@
 /********************************____footer____*****************************************/
 #go_up {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
   width: 100%;
   height: 20rem;
@@ -101,11 +99,13 @@
 }
 
 #go_up::before {
+  position: absolute;
   display: block;
   content: "";
+  top: 0;
   width: 100%;
   height: 2px;
-  background-color: #464646;
+  background-color: #0b5395;
 }
 
 #footer::before {
@@ -113,6 +113,6 @@
   content: "";
   width: 100%;
   height: 2px;
-  background-color: #464646;
+  background-color: #0b5395;
 }
 /*# sourceMappingURL=layout_default.css.map */

@@ -636,14 +636,24 @@
   margin: 0 3rem;
 }
 
+#fullpage #go_up {
+  align-items: flex-end;
+}
+
 #fullpage #go_up img {
-  height: 15rem;
-  width: 15rem;
+  position: absolute;
+  top: 3rem;
+  height: 10rem;
+  width: 12rem;
+  margin-bottom: 1rem;
 }
 
 #fullpage #go_up #text {
+  position: relative;
+  text-align: center;
+  width: 12rem;
+  bottom: 1rem;
   font-size: 3rem;
-  margin-left: 3rem;
 }
 
 #fullpage #footer #text {

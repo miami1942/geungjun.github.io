@@ -96,8 +96,6 @@ $my_min_width : 420px;
 /********************************____footer____*****************************************/
 #go_up {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
     width: 100%;
     height: 20rem;
@@ -110,11 +108,13 @@ $my_min_width : 420px;
 }
 
 #go_up::before {
+    position: absolute;
     display: block;
     content: "";
+    top: 0;
     width: 100%;
     height: 2px;
-    background-color: rgb(70, 70, 70);
+    background-color: $main_color;
 }
 
 #footer::before {
@@ -122,5 +122,5 @@ $my_min_width : 420px;
     content: "";
     width: 100%;
     height: 2px;
-    background-color: rgb(70, 70, 70);
+    background-color: $main_color;
 }

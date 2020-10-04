@@ -36,6 +36,20 @@ a {
 }
 
 /******************************______menu______*********************************************/
+#menu {
+  /*
+    #gnb_list>a::after {
+        content: "";
+        display: block;
+        position: absolute;
+        background-color: $main_color;
+        width: 500%;
+        left: -200%;
+        height: 2px;
+    }
+    */
+}
+
 #menu #expand_header {
   position: fixed;
   z-index: 1000;
@@ -146,23 +160,14 @@ a {
   }
 }
 
-#menu #gnb_list > a::after {
-  content: "";
-  display: block;
-  position: absolute;
-  background-color: #0b5395;
-  width: 500%;
-  left: -200%;
-  height: 2px;
-}
-
 #menu #gnb_list > a::before {
   content: "";
   display: block;
   position: absolute;
-  background-color: #0b5395;
+  background-color: #ccdff0;
   width: 500%;
   left: -200%;
-  height: 2px;
+  height: 9.5rem;
+  z-index: -1;
 }
 /*# sourceMappingURL=layout.css.map */
