@@ -82,7 +82,7 @@
 @media (max-width: 420px) {
   #fullpage #page2 .main_right .img div {
     width: 56rem;
-    font-size: 9rem;
+    font-size: 8rem;
   }
 }
 
@@ -228,8 +228,7 @@
 
 @media (max-width: 420px) {
   #fullpage #page5 .main_bottom_C #sub_info {
-    width: 85rem;
-    font-size: 4rem;
+    width: 90rem;
   }
 }
 
@@ -358,10 +357,6 @@
 @media (max-width: 420px) {
   #fullpage #page6 #page6_1 .main_right #text #text_h {
     width: 25rem;
-    font-size: 3rem;
-  }
-  #fullpage #page6 #page6_1 .main_right #text #text_b {
-    font-size: 3rem;
   }
 }
 
@@ -413,12 +408,6 @@
 
 #fullpage #page6 #page6_6 .main_down_D #text {
   margin: 0 3rem;
-}
-
-@media (max-width: 420px) {
-  #fullpage #page6 #page6_6 .main_down_D #text #text_b {
-    font-size: 4rem;
-  }
 }
 
 #fullpage #page7 #page7_1 .main_left {
@@ -481,10 +470,6 @@
 @media (max-width: 420px) {
   #fullpage #page7 #page7_1 .main_right #text #text_h {
     width: 25rem;
-    font-size: 3rem;
-  }
-  #fullpage #page7 #page7_1 .main_right #text #text_b {
-    font-size: 3rem;
   }
 }
 
@@ -536,12 +521,6 @@
 
 #fullpage #page7 #page7_5 .main_down_D #text {
   margin: 0 3rem;
-}
-
-@media (max-width: 420px) {
-  #fullpage #page7 #page7_5 .main_down_D #text #text_b {
-    font-size: 4rem;
-  }
 }
 
 #fullpage #page8 #page8_1 .main_left {
@@ -604,10 +583,6 @@
 @media (max-width: 420px) {
   #fullpage #page8 #page8_1 .main_right #text #text_h {
     width: 25rem;
-    font-size: 3rem;
-  }
-  #fullpage #page8 #page8_1 .main_right #text #text_b {
-    font-size: 3rem;
   }
 }
 
@@ -659,12 +634,6 @@
 
 #fullpage #page8 #page8_5 .main_down_D #text {
   margin: 0 3rem;
-}
-
-@media (max-width: 420px) {
-  #fullpage #page8 #page8_5 .main_down_D #text #text_b {
-    font-size: 4rem;
-  }
 }
 
 #fullpage #go_up img {

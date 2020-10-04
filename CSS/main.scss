@@ -92,7 +92,7 @@ $my_min_width : 420px;
 
                     @media (max-width: $my_min_width) {
                         width: 56rem;
-                        font-size: 9rem;
+                        font-size: 8rem;
                     }
                 }
             }
@@ -251,8 +251,7 @@ $my_min_width : 420px;
                 //left: 50%;
                 //transform: translate(-50%, 0%);
                 @media (max-width: $my_min_width) {
-                    width: 85rem;
-                    font-size: 4rem;
+                    width: 90rem;
                 }
             }
         }
@@ -332,11 +331,6 @@ $my_min_width : 420px;
                     @media (max-width: $my_min_width) {
                         #text_h {
                             width: 25rem;
-                            font-size: 3rem;
-                        }
-
-                        #text_b {
-                            font-size: 3rem;
                         }
                     }
                 }
@@ -452,12 +446,6 @@ $my_min_width : 420px;
 
                 #text {
                     margin: 0 3rem;
-
-                    @media (max-width: $my_min_width) {
-                        #text_b {
-                            font-size: 4rem;
-                        }
-                    }
                 }
             }
         }
@@ -525,11 +513,6 @@ $my_min_width : 420px;
                     @media (max-width: $my_min_width) {
                         #text_h {
                             width: 25rem;
-                            font-size: 3rem;
-                        }
-
-                        #text_b {
-                            font-size: 3rem;
                         }
                     }
                 }
@@ -596,12 +579,6 @@ $my_min_width : 420px;
 
                 #text {
                     margin: 0 3rem;
-
-                    @media (max-width: $my_min_width) {
-                        #text_b {
-                            font-size: 4rem;
-                        }
-                    }
                 }
             }
         }
@@ -669,11 +646,6 @@ $my_min_width : 420px;
                     @media (max-width: $my_min_width) {
                         #text_h {
                             width: 25rem;
-                            font-size: 3rem;
-                        }
-
-                        #text_b {
-                            font-size: 3rem;
                         }
                     }
                 }
@@ -740,12 +712,6 @@ $my_min_width : 420px;
 
                 #text {
                     margin: 0 3rem;
-
-                    @media (max-width: $my_min_width) {
-                        #text_b {
-                            font-size: 4rem;
-                        }
-                    }
                 }
             }
         }
@@ -756,13 +722,13 @@ $my_min_width : 420px;
             height: 15rem;
             width: 15rem;
         }
-    
+
         #text {
             font-size: 3rem;
             margin-left: 3rem;
         }
     }
-    
+
     #footer {
         #text {
             font-size: 2rem;
