@@ -11,7 +11,7 @@ html {
 
 @media (max-width: 420px) {
   #fullpage #text_h {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 }
 
@@ -24,7 +24,7 @@ html {
 
 @media (max-width: 420px) {
   #fullpage #text_b {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 }
 /*# sourceMappingURL=font.css.map */

@@ -719,12 +719,14 @@ $my_min_width : 420px;
 
     #go_up {
         align-items: flex-end;
+
         img {
             position: absolute;
             top: 3rem;
             height: 10rem;
             width: 12rem;
             margin-bottom: 1rem;
+            cursor: pointer;
         }
 
         #text {

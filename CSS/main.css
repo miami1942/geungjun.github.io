@@ -646,6 +646,7 @@
   height: 10rem;
   width: 12rem;
   margin-bottom: 1rem;
+  cursor: pointer;
 }
 
 #fullpage #go_up #text {
